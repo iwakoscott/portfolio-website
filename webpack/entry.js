@@ -1,12 +1,29 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Header from './components/header.js';
 
 class Website extends Component {
 
-  render(){
-    return <h1>{'Hello, world!'}</h1>
-  }
+  constructor(){
+    super();
+    this.state = {
+      projectData: null
+    }
+  } // Website.constructor
 
-}
+  componentDidMount(){
+
+  } // Website.componentDidMount
+
+  render(){
+    return (
+      <div>
+        <Header name="Satoshi Iwako"/>
+        <Cards projectData={this.state.projectData}/>
+      <div/>
+    );
+  } // Website.render
+
+} // Website
 
 ReactDOM.render(<Website />, document.getElementById('root'));
