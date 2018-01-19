@@ -39,3 +39,51 @@
     transform: translateY(0px);
   }
 }
+
+/* GLOBAL */
+
+html, body {
+  font-family: 'Cousine', monospace;
+  background: #a2ab58;
+  letter-spacing: 1px;
+}
+
+
+/* Header Card */
+.sliding-card {
+  margin-top: 5px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px #727a17;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #bf9561;
+  color: black;
+}
+
+#my-name {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  letter-spacing: 5px;
+}
+
+#my-stats .row
+{
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.fa-map-marker {
+  color: #e74c3c;
+}
+
+.fa-id-badge {
+  color: #414d0b;
+}
+
+.table td,
+.table th {
+  border: none !important;
+  vertical-align: middle;
+}

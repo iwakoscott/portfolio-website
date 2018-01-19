@@ -968,18 +968,35 @@ var Website = function (_Component) {
   function Website() {
     _classCallCheck(this, Website);
 
-    return _possibleConstructorReturn(this, (Website.__proto__ || Object.getPrototypeOf(Website)).apply(this, arguments));
-  }
+    var _this = _possibleConstructorReturn(this, (Website.__proto__ || Object.getPrototypeOf(Website)).call(this));
+
+    _this.state = {
+      projectData: null
+    };
+    return _this;
+  } // Website.constructor
 
   _createClass(Website, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {} // Website.componentDidMount
+
+  }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_header2.default, { name: 'Satoshi Iwako' });
-    }
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_header2.default, {
+          name: 'Satoshi Iwako',
+          quote: '',
+          whoAmI: 'I am a Jr. Frontend Developer and Espresso Enthusiast.' })
+      );
+    } // Website.render
+
   }]);
 
   return Website;
-}(_react.Component);
+}(_react.Component); // Website
 
 _reactDom2.default.render(_react2.default.createElement(Website, null), document.getElementById('root'));
 
@@ -18327,20 +18344,72 @@ var Header = function (_Component) {
 
   _createClass(Header, [{
     key: "render",
-
-
-    // constructor(props) {
-    //   super(props);
-    // }
-
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "jumbotron jumbotron-fluid text-center slide" },
+        { className: "container text-center slide" },
         _react2.default.createElement(
-          "h1",
-          { className: "bounce" },
-          this.props.name
+          "div",
+          { className: "row" },
+          _react2.default.createElement(
+            "div",
+            { className: "col-10 offset-1 sliding-card bounce" },
+            _react2.default.createElement(
+              "h1",
+              { id: "my-name" },
+              this.props.name
+            ),
+            _react2.default.createElement(
+              "table",
+              { className: "table table-borderless" },
+              _react2.default.createElement(
+                "tbody",
+                null,
+                _react2.default.createElement(
+                  "tr",
+                  null,
+                  _react2.default.createElement(
+                    "th",
+                    { scope: "row" },
+                    _react2.default.createElement("i", { className: "fa fa-map-marker fa-3x fa-fw" })
+                  ),
+                  _react2.default.createElement(
+                    "td",
+                    null,
+                    "Davis, CA"
+                  ),
+                  _react2.default.createElement(
+                    "td",
+                    null,
+                    "38.5449° N, 121.7405° W"
+                  )
+                ),
+                _react2.default.createElement(
+                  "tr",
+                  null,
+                  _react2.default.createElement(
+                    "th",
+                    { scope: "row" },
+                    _react2.default.createElement("i", { className: "fa fa-id-badge fa-3x fa-fw" })
+                  ),
+                  _react2.default.createElement(
+                    "td",
+                    { colSpan: "2" },
+                    "Web Development Intern at the CCCD"
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "row" },
+          _react2.default.createElement(
+            "div",
+            { className: "col-10 offset-1 sliding-card bounce" },
+            _react2.default.createElement("img", { className: "img-thumbnail", src: "assets/images/snow.jpg", alt: "me in central park" })
+          )
         )
       );
     } // Header.render

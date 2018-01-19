@@ -18,9 +18,12 @@ class Website extends Component {
   render(){
     return (
       <div>
-        <Header name="Satoshi Iwako"/>
-        <Cards projectData={this.state.projectData}/>
-      <div/>
+        <Header
+          name="Satoshi Iwako"
+          quote=""
+          whoAmI="I am a Jr. Frontend Developer and Espresso Enthusiast."/>
+        {/* <Cards projectData={this.state.projectData}/> */}
+      </div>
     );
   } // Website.render
 
