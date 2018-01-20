@@ -44,8 +44,8 @@ class Website extends Component {
           title="What am I working on?"
           content={`I am currently a Web Development Intern at the California Center for Cooperative Development
                    where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS
-                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) Here are also
-                   a couple of older projects I have worked on: `}
+                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working
+                   on building my first ever blog about espressos I try around the world.`}
         />
       </div>
     );

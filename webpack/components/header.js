@@ -8,7 +8,7 @@ class Header extends Component {
 
         <div className="row">
 
-          <div className="col-10 offset-1 sliding-card bounce">
+          <div className="col-12 sliding-card bounce">
             <h1 id="my-name">{this.props.name}</h1>
             <table className="table table-borderless">
               <tbody>

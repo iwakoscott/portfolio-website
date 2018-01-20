@@ -1007,7 +1007,7 @@ var Website = function (_Component) {
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-wrench',
           title: 'What am I working on?',
-          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) Here are also\n                   a couple of older projects I have worked on: '
+          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working\n                   on building my first ever blog about espressos I try around the world.'
         })
       );
     } // Website.render
@@ -18372,7 +18372,7 @@ var Header = function (_Component) {
           { className: "row" },
           _react2.default.createElement(
             "div",
-            { className: "col-10 offset-1 sliding-card bounce" },
+            { className: "col-12 sliding-card bounce" },
             _react2.default.createElement(
               "h1",
               { id: "my-name" },
