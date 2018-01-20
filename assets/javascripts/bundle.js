@@ -954,6 +954,10 @@ var _header = __webpack_require__(27);
 
 var _header2 = _interopRequireDefault(_header);
 
+var _cardBoard = __webpack_require__(28);
+
+var _cardBoard2 = _interopRequireDefault(_cardBoard);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -989,7 +993,22 @@ var Website = function (_Component) {
         _react2.default.createElement(_header2.default, {
           name: 'Satoshi Iwako',
           quote: '',
-          whoAmI: 'I am a Jr. Frontend Developer and Espresso Enthusiast.' })
+          whoAmI: 'I am a Jr. Frontend Developer and Espresso Enthusiast.' }),
+        _react2.default.createElement(_cardBoard2.default, {
+          faClass: 'fa fa-clock-o',
+          title: 'My Past',
+          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)'
+        }),
+        _react2.default.createElement(_cardBoard2.default, {
+          faClass: 'fa fa-compass',
+          title: 'Where am I going?',
+          content: 'I am learning all there is to Frontend Web Development and working my way to find my first developer position at a prominent tech company.'
+        }),
+        _react2.default.createElement(_cardBoard2.default, {
+          faClass: 'fa fa-wrench',
+          title: 'What am I working on?',
+          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) Here are also\n                   a couple of older projects I have worked on: '
+        })
       );
     } // Website.render
 
@@ -18375,12 +18394,12 @@ var Header = function (_Component) {
                   ),
                   _react2.default.createElement(
                     "td",
-                    null,
-                    "Davis, CA"
+                    { className: "small" },
+                    "Davis, CA USA"
                   ),
                   _react2.default.createElement(
                     "td",
-                    null,
+                    { className: "small" },
                     "38.5449° N, 121.7405° W"
                   )
                 ),
@@ -18389,12 +18408,12 @@ var Header = function (_Component) {
                   null,
                   _react2.default.createElement(
                     "th",
-                    { scope: "row" },
+                    { className: "small", scope: "row" },
                     _react2.default.createElement("i", { className: "fa fa-id-badge fa-3x fa-fw" })
                   ),
                   _react2.default.createElement(
                     "td",
-                    { colSpan: "2" },
+                    { className: "small", colSpan: "2" },
                     "Web Development Intern at the CCCD"
                   )
                 )
@@ -18407,7 +18426,7 @@ var Header = function (_Component) {
           { className: "row" },
           _react2.default.createElement(
             "div",
-            { className: "col-10 offset-1 sliding-card bounce" },
+            { className: "col-8 offset-2 sliding-card bounce" },
             _react2.default.createElement("img", { className: "img-thumbnail", src: "assets/images/snow.jpg", alt: "me in central park" })
           )
         )
@@ -18420,6 +18439,67 @@ var Header = function (_Component) {
 }(_react.Component); // Header
 
 exports.default = Header;
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function CardBoard(props) {
+  return _react2.default.createElement(
+    "div",
+    { className: "container-fluid mt-5 mb-5 card-board" },
+    _react2.default.createElement(
+      "div",
+      { className: "row" },
+      _react2.default.createElement(
+        "div",
+        { id: "badge", className: "col-2 offset-5" },
+        _react2.default.createElement("i", { className: props.faClass + ' ' + 'fa-5x mt-3 mb-3' })
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "row" },
+      _react2.default.createElement(
+        "div",
+        { className: "col-10 offset-1" },
+        _react2.default.createElement(
+          "h1",
+          { className: "text-center card-board-header m-2" },
+          props.title
+        )
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "row" },
+      _react2.default.createElement(
+        "div",
+        { className: "col-10 offset-1" },
+        _react2.default.createElement(
+          "p",
+          { className: "lead" },
+          props.content
+        )
+      )
+    )
+  );
+}
+
+exports.default = CardBoard;
 
 /***/ })
 /******/ ]);

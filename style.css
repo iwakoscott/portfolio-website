@@ -32,7 +32,7 @@
 
 @keyframes slide {
   0% {
-    transform: translateY(100vh);
+    transform: translateY(-100%);
   }
 
   100% {
@@ -49,18 +49,19 @@ html, body {
 }
 
 
-/* Header Card */
+/* Card */
 .sliding-card {
   margin-top: 5px;
   border-radius: 4px;
   box-shadow: 0px 0px 10px 0px #727a17;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 10px;
   background: #bf9561;
   color: black;
 }
 
-#my-name {
+#my-name,
+.card-board-header {
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
@@ -79,11 +80,43 @@ html, body {
 }
 
 .fa-id-badge {
-  color: #414d0b;
+  color: #2c3e50;
 }
 
 .table td,
 .table th {
   border: none !important;
   vertical-align: middle;
+}
+
+ /*Card Board*/
+
+.card-board {
+  background: #af8654;
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  border-radius: 4px;
+  border-width: thick;
+  padding-top:25px;
+  padding-bottom: 25px;
+}
+
+.card-board #badge {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-board i {
+    background: #2980b9;
+    height: 115px;
+    width: 115px;
+    border-radius: 100%;
+    border-style: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+/*    box-shadow: 0px 0px 10px 0px #2c3e50;*/
+    box-shadow: 0px 0px 10px 0px #5b452b;
 }
