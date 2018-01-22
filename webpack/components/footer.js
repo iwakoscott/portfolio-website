@@ -24,9 +24,9 @@ function Footer(props){
               </div>
               <div className="modal-body">
                 <form action="https://formspree.io/iwakoscott@gmail.com" method="POST">
-                  <input className="form-control" type="text" name="name" placeholder="name"/>
-                  <input className="form-control" type="email" name="_replyto" placeholder="email" />
-                  <textarea className="form-control" name="message" rows="3" placeholder="your message"></textarea>
+                  <input className="form-control" type="text" name="name" placeholder="name" required="true"/>
+                  <input className="form-control" type="email" name="_replyto" placeholder="email"  required="true"/>
+                  <textarea className="form-control" name="message" rows="3" placeholder="your message" required="true"></textarea>
                   <button className="btn btn-danger btn-lg mt-3 send-button" type="submit"> <i className="fa fa-paper-plane fa-1x"></i> {"Send"}</button>
                 </form>
               </div>

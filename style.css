@@ -133,6 +133,7 @@ html, body {
 
 footer .container-fluid {
     padding-bottom: 0px;
+    border-bottom-style: none;
 }
 
 footer a, footer a:hover, footer a:visited{

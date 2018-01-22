@@ -34,14 +34,18 @@ class Website extends Component {
                     I took a Fullstack Web Development Nanodegree on Udacity where I found
                     my passion for Web Development. I fell in love with Web Development so much
                     that I completed the program in just 2 months (on average, it takes 6 months to complete.)
-                    `}
+                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy.`}
         />
 
         <CardBoard
           faClass="fa fa-compass"
           backgroundColor="#414d0b"
           title="Where am I going?"
-          content="I am learning all there is to Frontend Web Development and working my way to find my first developer position at a prominent tech company."
+          content={`I am learning all there is to Frontend Web Development and
+                   working my way to find my first developer position at a
+                   prominent tech company. From there, I hope to delve into more
+                   Backend Development and reach my ultimate goal : working as a
+                   Fullstack Engineer.`}
         />
         <CardBoard
           faClass="fa fa-wrench"

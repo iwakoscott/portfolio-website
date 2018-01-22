@@ -1002,13 +1002,13 @@ var Website = function (_Component) {
           faClass: 'fa fa-clock-o',
           backgroundColor: '#e74c3c',
           title: 'My Past',
-          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    '
+          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy.'
         }),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-compass',
           backgroundColor: '#414d0b',
           title: 'Where am I going?',
-          content: 'I am learning all there is to Frontend Web Development and working my way to find my first developer position at a prominent tech company.'
+          content: 'I am learning all there is to Frontend Web Development and\n                   working my way to find my first developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Backend Development and reach my ultimate goal : working as a\n                   Fullstack Engineer.'
         }),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-wrench',
@@ -18612,9 +18612,9 @@ function Footer(props) {
                   _react2.default.createElement(
                     "form",
                     { action: "https://formspree.io/iwakoscott@gmail.com", method: "POST" },
-                    _react2.default.createElement("input", { className: "form-control", type: "text", name: "name", placeholder: "name" }),
-                    _react2.default.createElement("input", { className: "form-control", type: "email", name: "_replyto", placeholder: "email" }),
-                    _react2.default.createElement("textarea", { className: "form-control", name: "message", rows: "3", placeholder: "your message" }),
+                    _react2.default.createElement("input", { className: "form-control", type: "text", name: "name", placeholder: "name", required: "true" }),
+                    _react2.default.createElement("input", { className: "form-control", type: "email", name: "_replyto", placeholder: "email", required: "true" }),
+                    _react2.default.createElement("textarea", { className: "form-control", name: "message", rows: "3", placeholder: "your message", required: "true" }),
                     _react2.default.createElement(
                       "button",
                       { className: "btn btn-danger btn-lg mt-3 send-button", type: "submit" },
