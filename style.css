@@ -32,11 +32,11 @@
 
 @keyframes slide {
   0% {
-    transform: translateY(-100%);
+    transform: translateX(-100%);
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -59,12 +59,25 @@ html, body {
   color: black;
 }
 
+#profile-img {
+    max-width: 100%;
+}
+
+.main {
+    padding: 25px;
+}
+
 #my-name,
 .card-board-header {
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
   letter-spacing: 5px;
+  text-rendering: optimizeLegibility;
+}
+
+#my-name {
+  font-size: 4em;
 }
 
 #my-stats .row
@@ -80,12 +93,6 @@ html, body {
 
 .fa-id-badge {
   color: #2c3e50;
-}
-
-.table td,
-.table th {
-  border: none !important;
-  vertical-align: middle;
 }
 
  /*Card Board*/
@@ -107,7 +114,7 @@ html, body {
 }
 
 .card-board i {
-    background: #2980b9;
+    background: #c0392b;
     height: 115px;
     width: 115px;
     border-radius: 100%;

@@ -28,10 +28,11 @@ class Website extends Component {
           faClass="fa fa-clock-o"
           title="My Past"
           content={`I graduated from the University of California, Davis with a
-                    Bachelors of Science in Applied Mathematics. Upon graduation,
+                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,
                     I took a Fullstack Web Development Nanodegree on Udacity where I found
                     my passion for Web Development. I fell in love with Web Development so much
-                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)`}
+                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)
+                    `}
         />
 
         <CardBoard

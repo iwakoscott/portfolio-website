@@ -997,7 +997,7 @@ var Website = function (_Component) {
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-clock-o',
           title: 'My Past',
-          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)'
+          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    '
         }),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-compass',
@@ -18366,68 +18366,96 @@ var Header = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "container text-center slide" },
+        null,
         _react2.default.createElement(
           "div",
-          { className: "row" },
+          { className: "container text-center slide sliding-card main" },
           _react2.default.createElement(
             "div",
-            { className: "col-12 sliding-card bounce" },
+            { className: "row" },
             _react2.default.createElement(
-              "h1",
-              { id: "my-name" },
-              this.props.name
+              "div",
+              { className: "col-12" },
+              _react2.default.createElement(
+                "h1",
+                { id: "my-name" },
+                this.props.name
+              ),
+              _react2.default.createElement("hr", null)
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "row mt-3 mb-3" },
+            _react2.default.createElement(
+              "div",
+              { className: "col-sm-2" },
+              _react2.default.createElement("i", { className: "fa fa-map-marker fa-3x fa-fw bounce mb-2" })
             ),
             _react2.default.createElement(
-              "table",
-              { className: "table table-borderless" },
+              "div",
+              { className: "col-sm-5" },
               _react2.default.createElement(
-                "tbody",
+                "h5",
                 null,
-                _react2.default.createElement(
-                  "tr",
-                  null,
-                  _react2.default.createElement(
-                    "th",
-                    { scope: "row" },
-                    _react2.default.createElement("i", { className: "fa fa-map-marker fa-3x fa-fw" })
-                  ),
-                  _react2.default.createElement(
-                    "td",
-                    { className: "small" },
-                    "Davis, CA USA"
-                  ),
-                  _react2.default.createElement(
-                    "td",
-                    { className: "small" },
-                    "38.5449° N, 121.7405° W"
-                  )
-                ),
-                _react2.default.createElement(
-                  "tr",
-                  null,
-                  _react2.default.createElement(
-                    "th",
-                    { className: "small", scope: "row" },
-                    _react2.default.createElement("i", { className: "fa fa-id-badge fa-3x fa-fw" })
-                  ),
-                  _react2.default.createElement(
-                    "td",
-                    { className: "small", colSpan: "2" },
-                    "Web Development Intern at the CCCD"
-                  )
-                )
+                "Davis, CA USA"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "col-sm-5" },
+              _react2.default.createElement(
+                "h5",
+                null,
+                "38.5449° N, 121.7405° W"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "row mt-3 mb-3" },
+            _react2.default.createElement(
+              "div",
+              { className: "col-sm-3 offset-sm-3" },
+              _react2.default.createElement("i", { className: "fa fa-id-badge fa-3x fa-fw mb-2" })
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "col-sm-3" },
+              _react2.default.createElement(
+                "h5",
+                null,
+                "Web Development Intern at the CCCD"
               )
             )
           )
         ),
         _react2.default.createElement(
           "div",
-          { className: "row" },
+          { className: "container slide" },
           _react2.default.createElement(
             "div",
-            { className: "col-8 offset-2 sliding-card bounce" },
-            _react2.default.createElement("img", { className: "img-thumbnail", src: "assets/images/snow.jpg", alt: "me in central park" })
+            { className: "row" },
+            _react2.default.createElement(
+              "div",
+              { className: "col-sm-12 col-md-8 offset-md-2 sliding-card" },
+              _react2.default.createElement("img", { id: "profile-img", className: "img-thumbnail mx-auto d-block",
+                src: "assets/images/snow.jpg",
+                alt: "me in central park" })
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "row" },
+            _react2.default.createElement(
+              "div",
+              { className: "col-sm-2 offset-sm-5 col-md-8 offset-md-2" },
+              _react2.default.createElement(
+                "h6",
+                { className: "text-center" },
+                "Central Park, NYC"
+              )
+            )
           )
         )
       );
