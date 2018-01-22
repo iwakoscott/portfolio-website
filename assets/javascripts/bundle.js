@@ -18555,136 +18555,182 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Footer(props) {
-  return _react2.default.createElement(
-    "footer",
-    null,
-    _react2.default.createElement(
-      "div",
-      { className: "container-fluid card-board text-center" },
-      _react2.default.createElement(
-        "div",
-        { className: "row" },
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = function (_Component) {
+  _inherits(Footer, _Component);
+
+  function Footer(props) {
+    _classCallCheck(this, Footer);
+
+    var _this = _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this));
+
+    _this.state = {
+      openEnvelope: false
+    };
+
+    _this.toggleButton = _this.toggleButton.bind(_this);
+    return _this;
+  } // constructor
+
+  _createClass(Footer, [{
+    key: "toggleButton",
+    value: function toggleButton() {
+      var openEnvelope = !this.state.openEnvelope;
+      this.setState({ openEnvelope: openEnvelope });
+    } // Footer.buttonClicked
+
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        "footer",
+        null,
         _react2.default.createElement(
           "div",
-          { className: "col-sm-4" },
-          _react2.default.createElement(
-            "button",
-            { id: "contact-me-button", type: "button", className: "btn btn-danger btn-lg mb-3", "data-toggle": "modal", "data-target": "#formspree" },
-            _react2.default.createElement("i", { className: "fa fa-envelope-open fa-2x" }),
-            " ",
-            " Contact Me"
-          ),
+          { className: "container-fluid card-board text-center" },
           _react2.default.createElement(
             "div",
-            { className: "modal fade", id: "formspree", tabIndex: "-1", role: "dialog", "aria-labelledby": "formspreeTitle", "aria-hidden": "true" },
+            { className: "row" },
             _react2.default.createElement(
               "div",
-              { className: "modal-dialog modal-dialog-centered", role: "document" },
+              { className: "col-sm-4" },
+              _react2.default.createElement(
+                "button",
+                { id: "contact-me-button", type: "button", className: "btn btn-danger btn-lg mb-3", "data-toggle": "modal", "data-keyboard": "false", "data-target": "#formspree", onClick: function onClick() {
+                    _this2.toggleButton();
+                  } },
+                _react2.default.createElement("i", { className: this.state.openEnvelope ? 'fa fa-envelope-open fa-2x' : 'fa fa-envelope fa-2x' }),
+                " ",
+                " Contact Me"
+              ),
               _react2.default.createElement(
                 "div",
-                { className: "modal-content" },
+                { className: "modal fade", id: "formspree", tabIndex: "-1", role: "dialog", "aria-labelledby": "formspreeTitle", "aria-hidden": "true", onClick: function onClick() {
+                    _this2.toggleButton();
+                  } },
                 _react2.default.createElement(
                   "div",
-                  { className: "modal-header" },
+                  { className: "modal-dialog modal-dialog-centered", role: "document" },
                   _react2.default.createElement(
-                    "h5",
-                    { className: "modal-title text-center", id: "formspreeModalLongTitle" },
-                    "Contact Me"
-                  ),
-                  _react2.default.createElement(
-                    "button",
-                    { type: "button", className: "close", "data-dismiss": "modal", "aria-label": "Close" },
+                    "div",
+                    { className: "modal-content" },
                     _react2.default.createElement(
-                      "span",
-                      { "aria-hidden": "true" },
-                      "\xD7"
+                      "div",
+                      { className: "modal-header" },
+                      _react2.default.createElement(
+                        "h5",
+                        { className: "modal-title text-center", id: "formspreeModalLongTitle" },
+                        "Contact Me"
+                      ),
+                      _react2.default.createElement(
+                        "button",
+                        { type: "button", className: "close", "data-dismiss": "modal", "aria-label": "Close", onClick: function onClick() {
+                            _this2.toggleButton();
+                          } },
+                        _react2.default.createElement(
+                          "span",
+                          { "aria-hidden": "true" },
+                          "\xD7"
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "modal-body" },
+                      _react2.default.createElement(
+                        "form",
+                        { action: "https://formspree.io/iwakoscott@gmail.com", method: "POST" },
+                        _react2.default.createElement("input", { className: "form-control mb-1 mt-1", type: "text", name: "name", placeholder: "name", required: "true" }),
+                        _react2.default.createElement("input", { className: "form-control mb-1 mt-1", type: "email", name: "_replyto", placeholder: "email", required: "true" }),
+                        _react2.default.createElement("textarea", { className: "form-control mb-1 mt-1", name: "message", rows: "3", placeholder: "your message", required: "true" }),
+                        _react2.default.createElement(
+                          "button",
+                          { className: "btn btn-danger btn-lg mt-3 send-button", type: "submit" },
+                          " ",
+                          _react2.default.createElement("i", { className: "fa fa-paper-plane fa-1x" }),
+                          " ",
+                          "Send"
+                        )
+                      )
                     )
                   )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "modal-body" },
-                  _react2.default.createElement(
-                    "form",
-                    { action: "https://formspree.io/iwakoscott@gmail.com", method: "POST" },
-                    _react2.default.createElement("input", { className: "form-control mb-1 mt-1", type: "text", name: "name", placeholder: "name", required: "true" }),
-                    _react2.default.createElement("input", { className: "form-control mb-1 mt-1", type: "email", name: "_replyto", placeholder: "email", required: "true" }),
-                    _react2.default.createElement("textarea", { className: "form-control mb-1 mt-1", name: "message", rows: "3", placeholder: "your message", required: "true" }),
-                    _react2.default.createElement(
-                      "button",
-                      { className: "btn btn-danger btn-lg mt-3 send-button", type: "submit" },
-                      " ",
-                      _react2.default.createElement("i", { className: "fa fa-paper-plane fa-1x" }),
-                      " ",
-                      "Send"
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "col-sm-5" },
-          _react2.default.createElement(
-            "ul",
-            { className: "list-inline" },
-            _react2.default.createElement(
-              "li",
-              { className: "nav-item list-inline-item" },
-              _react2.default.createElement(
-                "a",
-                { className: "nav-link", href: "https://github.com/iwakoscott", target: "_blank" },
-                _react2.default.createElement("i", { className: "fa fa-github-square fa-2x fa-fw" }),
-                "  ",
-                _react2.default.createElement(
-                  "span",
-                  { className: "user-name" },
-                  "iwakoscott"
                 )
               )
             ),
             _react2.default.createElement(
-              "li",
-              { className: "nav-item list-inline-item" },
+              "div",
+              { className: "col-sm-5" },
               _react2.default.createElement(
-                "a",
-                { className: "nav-link", href: "https://www.linkedin.com/in/iwakoscott/", target: "_blank" },
-                _react2.default.createElement("i", { className: "fa fa-linkedin-square fa-2x fa-fw" }),
-                "  ",
+                "ul",
+                { className: "list-inline" },
                 _react2.default.createElement(
-                  "span",
-                  { className: "user-name" },
-                  "iwakoscott"
+                  "li",
+                  { className: "nav-item list-inline-item" },
+                  _react2.default.createElement(
+                    "a",
+                    { className: "nav-link", href: "https://github.com/iwakoscott", target: "_blank" },
+                    _react2.default.createElement("i", { className: "fa fa-github-square fa-2x fa-fw" }),
+                    "  ",
+                    _react2.default.createElement(
+                      "span",
+                      { className: "user-name" },
+                      "iwakoscott"
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "li",
+                  { className: "nav-item list-inline-item" },
+                  _react2.default.createElement(
+                    "a",
+                    { className: "nav-link", href: "https://www.linkedin.com/in/iwakoscott/", target: "_blank" },
+                    _react2.default.createElement("i", { className: "fa fa-linkedin-square fa-2x fa-fw" }),
+                    "  ",
+                    _react2.default.createElement(
+                      "span",
+                      { className: "user-name" },
+                      "iwakoscott"
+                    )
+                  )
                 )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "col-sm-3" },
+              _react2.default.createElement(
+                "span",
+                null,
+                "COPYRIGHT ",
+                " \xA9 ",
+                " 2018 Satoshi Scott Iwako",
+                " "
               )
             )
           )
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "col-sm-3" },
-          _react2.default.createElement(
-            "span",
-            null,
-            "COPYRIGHT ",
-            " \xA9 ",
-            " 2018 Satoshi Scott Iwako",
-            " "
-          )
         )
-      )
-    )
-  );
-}
+      );
+    } // Footer.render
+
+  }]);
+
+  return Footer;
+}(_react.Component); // Footer
 
 exports.default = Footer;
 
