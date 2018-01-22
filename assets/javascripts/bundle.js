@@ -18611,7 +18611,7 @@ var Footer = function (_Component) {
               { className: "col-sm-4" },
               _react2.default.createElement(
                 "button",
-                { id: "contact-me-button", type: "button", className: "btn btn-danger btn-lg mb-3", "data-toggle": "modal", "data-keyboard": "false", "data-target": "#formspree", onClick: function onClick() {
+                { id: "contact-me-button", type: "button", className: "btn btn-danger btn-lg mb-3", "data-toggle": "modal", dataKeyboard: "false", "data-target": "#formspree", onClick: function onClick() {
                     _this2.toggleButton();
                   } },
                 _react2.default.createElement("i", { className: this.state.openEnvelope ? 'fa fa-envelope-open fa-2x' : 'fa fa-envelope fa-2x' }),
@@ -18620,9 +18620,7 @@ var Footer = function (_Component) {
               ),
               _react2.default.createElement(
                 "div",
-                { className: "modal fade", id: "formspree", tabIndex: "-1", role: "dialog", "aria-labelledby": "formspreeTitle", "aria-hidden": "true", onClick: function onClick() {
-                    _this2.toggleButton();
-                  } },
+                { className: "modal fade", id: "formspree", tabIndex: "-1", role: "dialog", "aria-labelledby": "formspreeTitle", "aria-hidden": "true" },
                 _react2.default.createElement(
                   "div",
                   { className: "modal-dialog modal-dialog-centered", role: "document" },
