@@ -18577,7 +18577,9 @@ function Footer(props) {
           _react2.default.createElement(
             "button",
             { id: "contact-me-button", type: "button", className: "btn btn-danger btn-lg mb-3", "data-toggle": "modal", "data-target": "#formspree" },
-            "Contact Me"
+            _react2.default.createElement("i", { className: "fa fa-envelope-open fa-2x" }),
+            " ",
+            " Contact Me"
           ),
           _react2.default.createElement(
             "div",
@@ -18593,7 +18595,7 @@ function Footer(props) {
                   { className: "modal-header" },
                   _react2.default.createElement(
                     "h5",
-                    { className: "modal-title", id: "formspreeModalLongTitle" },
+                    { className: "modal-title text-center", id: "formspreeModalLongTitle" },
                     "Contact Me"
                   ),
                   _react2.default.createElement(
@@ -18612,9 +18614,9 @@ function Footer(props) {
                   _react2.default.createElement(
                     "form",
                     { action: "https://formspree.io/iwakoscott@gmail.com", method: "POST" },
-                    _react2.default.createElement("input", { className: "form-control", type: "text", name: "name", placeholder: "name", required: "true" }),
-                    _react2.default.createElement("input", { className: "form-control", type: "email", name: "_replyto", placeholder: "email", required: "true" }),
-                    _react2.default.createElement("textarea", { className: "form-control", name: "message", rows: "3", placeholder: "your message", required: "true" }),
+                    _react2.default.createElement("input", { className: "form-control mb-1 mt-1", type: "text", name: "name", placeholder: "name", required: "true" }),
+                    _react2.default.createElement("input", { className: "form-control mb-1 mt-1", type: "email", name: "_replyto", placeholder: "email", required: "true" }),
+                    _react2.default.createElement("textarea", { className: "form-control mb-1 mt-1", name: "message", rows: "3", placeholder: "your message", required: "true" }),
                     _react2.default.createElement(
                       "button",
                       { className: "btn btn-danger btn-lg mt-3 send-button", type: "submit" },
