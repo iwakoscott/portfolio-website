@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/header.js';
 import CardBoard from './components/card-board.js';
+import Footer from './components/footer.js';
 
 class Website extends Component {
 
@@ -48,6 +49,7 @@ class Website extends Component {
                    architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working
                    on building my first ever blog about espressos I try around the world.`}
         />
+        <Footer />
       </div>
     );
   } // Website.render

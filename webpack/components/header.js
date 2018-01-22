@@ -20,7 +20,7 @@ class Header extends Component {
               <h5>{"Davis, CA USA"}</h5>
             </div>
             <div className="col-sm-5">
-              <h5>{"38.5449° N, 121.7405° W"}</h5>
+              <h5>{"38.5449"}&deg; {" N, "} {"121.7405"}&deg; {"W"}</h5>
             </div>
           </div>
           <div className="row mt-3 mb-3">
