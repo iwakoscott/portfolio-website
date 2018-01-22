@@ -1002,7 +1002,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-clock-o',
           backgroundColor: '#e74c3c',
           title: 'My Past',
-          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy.'
+          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are my projects: '
         }),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-compass',
@@ -1014,7 +1014,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-wrench',
           title: 'What am I working on?',
           backgroundColor: '#3498db',
-          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working\n                   on building my first ever blog about espressos I try around the world.'
+          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working\n                   on building my first ever blog about espressos I try around the world - I will add a link to it\n                   when I finish building it!'
         }),
         _react2.default.createElement(_footer2.default, null)
       );
@@ -18653,9 +18653,11 @@ var Footer = function (_Component) {
                       _react2.default.createElement(
                         "form",
                         { action: "https://formspree.io/iwakoscott@gmail.com", method: "POST" },
+                        _react2.default.createElement("input", { type: "hidden", name: "_format", value: "plain" }),
                         _react2.default.createElement("input", { className: "form-control mb-1 mt-1", type: "text", name: "name", placeholder: "name", required: "true" }),
                         _react2.default.createElement("input", { className: "form-control mb-1 mt-1", type: "email", name: "_replyto", placeholder: "email", required: "true" }),
                         _react2.default.createElement("textarea", { className: "form-control mb-1 mt-1", name: "message", rows: "3", placeholder: "your message", required: "true" }),
+                        _react2.default.createElement("input", { type: "text", name: "_gotcha", style: { "display": "none" } }),
                         _react2.default.createElement(
                           "button",
                           { className: "btn btn-danger btn-lg mt-3 send-button", type: "submit" },

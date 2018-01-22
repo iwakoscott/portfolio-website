@@ -34,7 +34,7 @@ class Website extends Component {
                     I took a Fullstack Web Development Nanodegree on Udacity where I found
                     my passion for Web Development. I fell in love with Web Development so much
                     that I completed the program in just 2 months (on average, it takes 6 months to complete.)
-                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy.`}
+                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are my projects: `}
         />
 
         <CardBoard
@@ -54,7 +54,8 @@ class Website extends Component {
           content={`I am currently a Web Development Intern at the California Center for Cooperative Development
                    where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS
                    architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working
-                   on building my first ever blog about espressos I try around the world.`}
+                   on building my first ever blog about espressos I try around the world - I will add a link to it
+                   when I finish building it!`}
         />
         <Footer />
       </div>

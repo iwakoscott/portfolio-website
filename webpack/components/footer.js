@@ -41,9 +41,11 @@ class Footer extends Component {
                 </div>
                 <div className="modal-body">
                   <form action="https://formspree.io/iwakoscott@gmail.com" method="POST">
+                    <input type="hidden" name="_format" value="plain" />
                     <input className="form-control mb-1 mt-1" type="text" name="name" placeholder="name" required="true"/>
                     <input className="form-control mb-1 mt-1" type="email" name="_replyto" placeholder="email"  required="true"/>
                     <textarea className="form-control mb-1 mt-1" name="message" rows="3" placeholder="your message" required="true"></textarea>
+                    <input type="text" name="_gotcha" style={{"display": "none"}} />
                     <button className="btn btn-danger btn-lg mt-3 send-button" type="submit"> <i className="fa fa-paper-plane fa-1x"></i> {"Send"}</button>
                   </form>
                 </div>
