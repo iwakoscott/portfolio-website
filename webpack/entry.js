@@ -27,6 +27,7 @@ class Website extends Component {
 
         <CardBoard
           faClass="fa fa-clock-o"
+          backgroundColor="#e74c3c"
           title="My Past"
           content={`I graduated from the University of California, Davis with a
                     Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,
@@ -38,12 +39,14 @@ class Website extends Component {
 
         <CardBoard
           faClass="fa fa-compass"
+          backgroundColor="#414d0b"
           title="Where am I going?"
           content="I am learning all there is to Frontend Web Development and working my way to find my first developer position at a prominent tech company."
         />
         <CardBoard
           faClass="fa fa-wrench"
           title="What am I working on?"
+          backgroundColor="#3498db"
           content={`I am currently a Web Development Intern at the California Center for Cooperative Development
                    where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS
                    architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working

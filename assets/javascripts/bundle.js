@@ -1000,17 +1000,20 @@ var Website = function (_Component) {
           whoAmI: 'I am a Jr. Frontend Developer and Espresso Enthusiast.' }),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-clock-o',
+          backgroundColor: '#e74c3c',
           title: 'My Past',
           content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    '
         }),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-compass',
+          backgroundColor: '#414d0b',
           title: 'Where am I going?',
           content: 'I am learning all there is to Frontend Web Development and working my way to find my first developer position at a prominent tech company.'
         }),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-wrench',
           title: 'What am I working on?',
+          backgroundColor: '#3498db',
           content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working\n                   on building my first ever blog about espressos I try around the world.'
         }),
         _react2.default.createElement(_footer2.default, null)
@@ -18506,7 +18509,7 @@ function CardBoard(props) {
       _react2.default.createElement(
         "div",
         { id: "badge", className: "col-2 offset-5" },
-        _react2.default.createElement("i", { className: props.faClass + ' ' + 'fa-5x mt-3 mb-3 card-board-sticker' })
+        _react2.default.createElement("i", { className: props.faClass + ' ' + 'fa-5x mt-3 mb-3 card-board-sticker', style: { "background": props.backgroundColor } })
       )
     ),
     _react2.default.createElement(
@@ -18519,7 +18522,8 @@ function CardBoard(props) {
           "h1",
           { className: "text-center card-board-header m-2" },
           props.title
-        )
+        ),
+        _react2.default.createElement("hr", null)
       )
     ),
     _react2.default.createElement(

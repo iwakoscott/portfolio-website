@@ -6,12 +6,13 @@ function CardBoard(props) {
 
       <div className="row">
         <div id="badge" className="col-2 offset-5">
-          <i className={props.faClass + ' ' + 'fa-5x mt-3 mb-3 card-board-sticker'}></i>
+          <i className={props.faClass + ' ' + 'fa-5x mt-3 mb-3 card-board-sticker'} style={{"background": props.backgroundColor}}></i>
         </div>
       </div>
       <div className="row">
         <div className="col-10 offset-1">
           <h1 className="text-center card-board-header m-2">{props.title}</h1>
+          <hr />
         </div>
       </div>
       <div className="row">
