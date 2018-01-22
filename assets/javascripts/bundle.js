@@ -18573,18 +18573,65 @@ function Footer(props) {
         { className: "row" },
         _react2.default.createElement(
           "div",
-          { className: "col-sm-3" },
+          { className: "col-sm-4" },
           _react2.default.createElement(
-            "h1",
-            { className: "card-board-header" },
-            "Connect w",
-            "/ ",
-            "Me"
+            "button",
+            { id: "contact-me-button", type: "button", className: "btn btn-danger btn-lg mb-3", "data-toggle": "modal", "data-target": "#formspree" },
+            "Contact Me"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "modal fade", id: "formspree", tabIndex: "-1", role: "dialog", "aria-labelledby": "formspreeTitle", "aria-hidden": "true" },
+            _react2.default.createElement(
+              "div",
+              { className: "modal-dialog modal-dialog-centered", role: "document" },
+              _react2.default.createElement(
+                "div",
+                { className: "modal-content" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "modal-header" },
+                  _react2.default.createElement(
+                    "h5",
+                    { className: "modal-title", id: "formspreeModalLongTitle" },
+                    "Contact Me"
+                  ),
+                  _react2.default.createElement(
+                    "button",
+                    { type: "button", className: "close", "data-dismiss": "modal", "aria-label": "Close" },
+                    _react2.default.createElement(
+                      "span",
+                      { "aria-hidden": "true" },
+                      "\xD7"
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "modal-body" },
+                  _react2.default.createElement(
+                    "form",
+                    { action: "https://formspree.io/iwakoscott@gmail.com", method: "POST" },
+                    _react2.default.createElement("input", { className: "form-control", type: "text", name: "name", placeholder: "name" }),
+                    _react2.default.createElement("input", { className: "form-control", type: "email", name: "_replyto", placeholder: "email" }),
+                    _react2.default.createElement("textarea", { className: "form-control", name: "message", rows: "3", placeholder: "your message" }),
+                    _react2.default.createElement(
+                      "button",
+                      { className: "btn btn-danger btn-lg mt-3 send-button", type: "submit" },
+                      " ",
+                      _react2.default.createElement("i", { className: "fa fa-paper-plane fa-1x" }),
+                      " ",
+                      "Send"
+                    )
+                  )
+                )
+              )
+            )
           )
         ),
         _react2.default.createElement(
           "div",
-          { className: "col-sm-6" },
+          { className: "col-sm-5" },
           _react2.default.createElement(
             "ul",
             { className: "list-inline" },

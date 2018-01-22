@@ -68,7 +68,10 @@ html, body {
 }
 
 #my-name,
-.card-board-header {
+.card-board-header,
+#contact-me-button,
+.modal-title,
+.send-button {
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
@@ -135,4 +138,16 @@ footer .container-fluid {
 footer a, footer a:hover, footer a:visited{
     color: black;
     text-decoration: none;
+}
+
+.modal-content {
+    background: #af8654;
+}
+
+.send-button {
+    background: #af8654;
+    border-style: dashed;
+    border-color: black;
+    border-width: medium;
+    padding: 5px 30px;
 }
