@@ -37,6 +37,8 @@ class Website extends Component {
                     I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are my past projects: `}
         />
 
+        <Projects />
+
         <CardBoard
           faClass="fa fa-compass"
           backgroundColor="#414d0b"
