@@ -1002,7 +1002,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-clock-o',
           backgroundColor: '#e74c3c',
           title: 'My Past',
-          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are my projects: '
+          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are my past projects: '
         }),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-compass',
@@ -18608,7 +18608,7 @@ var Footer = function (_Component) {
             { className: "row" },
             _react2.default.createElement(
               "div",
-              { className: "col-sm-4" },
+              { className: "col-sm-5 col-md-4" },
               _react2.default.createElement(
                 "button",
                 { id: "contact-me-button", type: "button", className: "btn btn-danger btn-lg mb-3", "data-toggle": "modal", "data-target": "#formspree", onClick: function onClick() {
@@ -18674,7 +18674,7 @@ var Footer = function (_Component) {
             ),
             _react2.default.createElement(
               "div",
-              { className: "col-sm-5" },
+              { className: "col-sm-5 col-md-4" },
               _react2.default.createElement(
                 "ul",
                 { className: "list-inline" },
@@ -18684,7 +18684,7 @@ var Footer = function (_Component) {
                   _react2.default.createElement(
                     "a",
                     { className: "nav-link", href: "https://github.com/iwakoscott", target: "_blank" },
-                    _react2.default.createElement("i", { className: "fa fa-github-square fa-2x fa-fw" }),
+                    _react2.default.createElement("i", { className: "fa fa-github-square fa-1x fa-fw" }),
                     "  ",
                     _react2.default.createElement(
                       "span",
@@ -18699,7 +18699,7 @@ var Footer = function (_Component) {
                   _react2.default.createElement(
                     "a",
                     { className: "nav-link", href: "https://www.linkedin.com/in/iwakoscott/", target: "_blank" },
-                    _react2.default.createElement("i", { className: "fa fa-linkedin-square fa-2x fa-fw" }),
+                    _react2.default.createElement("i", { className: "fa fa-linkedin-square fa-1x fa-fw" }),
                     "  ",
                     _react2.default.createElement(
                       "span",
@@ -18712,7 +18712,7 @@ var Footer = function (_Component) {
             ),
             _react2.default.createElement(
               "div",
-              { className: "col-sm-3" },
+              { className: "col-sm-2 col-md-4" },
               _react2.default.createElement(
                 "span",
                 null,
