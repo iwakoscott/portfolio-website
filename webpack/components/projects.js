@@ -14,17 +14,23 @@ class Projects extends Component {
   } // Projects.componentDidMount
 
   render(){
-    const collection = this.state.projects ? this.state.projects.map( (project) => {
+    const collection = this.state.projects.length > 0 ? this.state.projects.map((project, i) => {
       return (
-        <Project key={project.name}
-                 name={project.name}
-                 thumbnail={project.thumbnail}
-                 description={project.description}
-                 liveUrl={project.live}
-                 codeUrl={project.code}
-                 rank={project.rank}/>
+          <Project key={i}
+                   name={project.name}
+                   thumbnail={project.thumbnail}
+                   description={project.description}
+                   liveUrl={project.live}
+                   codeUrl={project.code}
+                   size={project.size}/>
       );
-    });
+    }) : [];
+
+    return (
+      <div className="card-columns">
+        { collection.length > 0 ? collection : ''}
+      </div>
+    );
   } // Projects.render
 
 } // Projects

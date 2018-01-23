@@ -962,6 +962,10 @@ var _footer = __webpack_require__(29);
 
 var _footer2 = _interopRequireDefault(_footer);
 
+var _projects = __webpack_require__(30);
+
+var _projects2 = _interopRequireDefault(_projects);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1004,6 +1008,7 @@ var Website = function (_Component) {
           title: 'My Past',
           content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are my past projects: '
         }),
+        _react2.default.createElement(_projects2.default, null),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-compass',
           backgroundColor: '#414d0b',
@@ -18733,6 +18738,146 @@ var Footer = function (_Component) {
 }(_react.Component); // Footer
 
 exports.default = Footer;
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _project = __webpack_require__(31);
+
+var _project2 = _interopRequireDefault(_project);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Projects = function (_Component) {
+  _inherits(Projects, _Component);
+
+  function Projects() {
+    _classCallCheck(this, Projects);
+
+    var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
+
+    _this.state = { projects: [] };
+    return _this;
+  }
+
+  _createClass(Projects, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var projects = __webpack_require__(32);
+      this.setState({ projects: projects });
+    } // Projects.componentDidMount
+
+  }, {
+    key: 'render',
+    value: function render() {
+      var collection = this.state.projects.length > 0 ? this.state.projects.map(function (project, i) {
+        return _react2.default.createElement(_project2.default, { key: i,
+          name: project.name,
+          thumbnail: project.thumbnail,
+          description: project.description,
+          liveUrl: project.live,
+          codeUrl: project.code,
+          size: project.size });
+      }) : [];
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'card-columns' },
+        collection.length > 0 ? collection : ''
+      );
+    } // Projects.render
+
+  }]);
+
+  return Projects;
+}(_react.Component); // Projects
+
+exports.default = Projects;
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Project(props) {
+  return _react2.default.createElement(
+    "div",
+    { className: "card" },
+    _react2.default.createElement("img", { className: "card-img-top img-thumbnail img-project", src: props.thumbnail, alt: props.name, width: "100%" }),
+    _react2.default.createElement(
+      "div",
+      { className: "card-body" },
+      _react2.default.createElement(
+        "h2",
+        { className: "card-title" },
+        props.name
+      ),
+      _react2.default.createElement(
+        "p",
+        { className: "card-text" },
+        props.description
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "text-center" },
+        _react2.default.createElement(
+          "div",
+          { className: "btn-group project-buttons", role: "group", "aria-label": "project-buttons" },
+          _react2.default.createElement(
+            "a",
+            { className: "btn btn-outline-light", href: props.liveUrl, target: "_blank" },
+            "Live"
+          ),
+          _react2.default.createElement(
+            "a",
+            { className: "btn btn-outline-light", href: props.codeUrl, target: "_blank" },
+            "Code"
+          )
+        )
+      )
+    )
+  );
+}
+
+exports.default = Project;
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+module.exports = [{"name":"Dynamic Coffee Website","thumbnail":"../../assets/images/coffee-database.png","description":"Received personal praise from the administrator for exhibiting great knowledge and skills in Python, SQLAlchemy, and Flask on a final project: a data-driven coffee catalog website. (A review of my work: https://goo.gl/3kHmGg.) Successfully deployed my Flask website using Amazon Lightsail.","live":"http://35.162.223.26/","code":"https://goo.gl/fvG3XH","rank":"small"},{"name":"Twitch Viewer App","thumbnail":"../../assets/images/twitch-app.png","description":"Designed and implemented a Twitch viewing application which allows the user to check which channels are currently online and plays the current feed upon clicking the channels name.","live":"https://iwakoscott.github.io/twitch-app/","code":"https://github.com/iwakoscott/twitch-app","rank":"medium"},{"name":"Javascript Calculator","thumbnail":"../../assets/images/js-calculator.png","description":"Implemented a calculator in React.js. The user can use the calculator in the web browser like a physical calculator. I styled the calculator using CSS to look as real as possible.","live":"https://iwakoscott.github.io/javascript-calculator/","code":"https://github.com/iwakoscott/javascript-calculator","rank":"medium"},{"name":"Pomodoro Timer","thumbnail":"../../assets/images/pomodoro-timer.png","description":"Developed a version of a Pomodoro Timer in React.js. Allows the user to select a work time and break time and indicates the user when the time runs out with a sound and web browser notification. The Frontend design was inspired by the layers of a tomato (or Pomodoro.)","live":"https://iwakoscott.github.io/pomodoro/","code":"https://github.com/iwakoscott/pomodoro","rank":"large"},{"name":"Chef's Portfolio Website","thumbnail":"../../assets/images/chefs-site.png","description":"Designed and implemented a Chef's professional portfolio website using React.js and deployed the website using Github Pages. Constructed an Instagram component that displayed the three most recent Instagram posts using the Instagram API.","live":"http://keikoiwako.com/","code":"https://github.com/iwakoscott/keikoiwako","rank":"small"}]
 
 /***/ })
 /******/ ]);

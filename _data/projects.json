@@ -1,42 +1,42 @@
 [
   {
     "name": "Dynamic Coffee Website",
-    "thumbnail": "",
-    "description": "Received personal praise from the administrator for exhibiting great knowledge and skills in Python, SQLAlchemy, and Flask on a final project: a data-driven coffee catalog website. (A review of my work: <a href=\"https://goo.gl/3kHmGg\">https://goo.gl/3kHmGg</a>.) Successfully deployed my Flask website using Amazon Lightsail.",
+    "thumbnail": "../../assets/images/coffee-database.png",
+    "description": "Received personal praise from the administrator for exhibiting great knowledge and skills in Python, SQLAlchemy, and Flask on a final project: a data-driven coffee catalog website. (A review of my work: https://goo.gl/3kHmGg.) Successfully deployed my Flask website using Amazon Lightsail.",
     "live": "http://35.162.223.26/",
     "code": "https://goo.gl/fvG3XH",
-    "rank": 2
+    "rank": "small"
   },
   {
     "name": "Twitch Viewer App",
-    "thumbnail": "",
+    "thumbnail": "../../assets/images/twitch-app.png",
     "description": "Designed and implemented a Twitch viewing application which allows the user to check which channels are currently online and plays the current feed upon clicking the channels name.",
     "live": "https://iwakoscott.github.io/twitch-app/",
     "code": "https://github.com/iwakoscott/twitch-app",
-    "rank": 4
+    "rank": "medium"
   },
   {
     "name": "Javascript Calculator",
-    "thumbnail": "",
+    "thumbnail": "../../assets/images/js-calculator.png",
     "description": "Implemented a calculator in React.js. The user can use the calculator in the web browser like a physical calculator. I styled the calculator using CSS to look as real as possible.",
     "live": "https://iwakoscott.github.io/javascript-calculator/",
     "code": "https://github.com/iwakoscott/javascript-calculator",
-    "rank": 3
+    "rank": "medium"
   },
   {
     "name": "Pomodoro Timer",
-    "thumbnail": "",
-    "description": "Developed a version of a <strong>Pomodoro Timer</strong> in <em>React.js</em>. Allows the user to select a work time and break time and indicates the user when the time runs out with a sound and web browser notification. The Frontend design was inspired by the layers of a tomato (or Pomodoro.)",
+    "thumbnail": "../../assets/images/pomodoro-timer.png",
+    "description": "Developed a version of a Pomodoro Timer in React.js. Allows the user to select a work time and break time and indicates the user when the time runs out with a sound and web browser notification. The Frontend design was inspired by the layers of a tomato (or Pomodoro.)",
     "live": "https://iwakoscott.github.io/pomodoro/",
     "code": "https://github.com/iwakoscott/pomodoro",
-    "rank": "1"
+    "rank": "large"
   },
   {
     "name": "Chef's Portfolio Website",
-    "thumbnail": "",
-    "description": "Designed and implemented a Chef's professional portfolio website using <em>React.js</em> and deployed the website using <em>Github Pages</em>. Constructed an Instagram component that displayed the three most recent Instagram posts using the Instagram API.",
+    "thumbnail": "../../assets/images/chefs-site.png",
+    "description": "Designed and implemented a Chef's professional portfolio website using React.js and deployed the website using Github Pages. Constructed an Instagram component that displayed the three most recent Instagram posts using the Instagram API.",
     "live": "http://keikoiwako.com/",
     "code": "https://github.com/iwakoscott/keikoiwako",
-    "rank": 5
+    "rank": "small"
   }
 ]

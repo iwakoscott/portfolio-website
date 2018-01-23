@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Header from './components/header.js';
 import CardBoard from './components/card-board.js';
 import Footer from './components/footer.js';
+import Projects from './components/projects.js';
 
 class Website extends Component {
 
