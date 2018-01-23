@@ -28,3 +28,5 @@ class Projects extends Component {
   } // Projects.render
 
 } // Projects
+
+export default Projects;
