@@ -35,7 +35,7 @@ class Website extends Component {
                     I took a Fullstack Web Development Nanodegree on Udacity where I found
                     my passion for Web Development. I fell in love with Web Development so much
                     that I completed the program in just 2 months (on average, it takes 6 months to complete.)
-                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are my past projects: `}
+                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are some of my projects: `}
         />
 
         <Projects />

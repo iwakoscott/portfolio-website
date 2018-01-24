@@ -1006,7 +1006,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-clock-o',
           backgroundColor: '#e74c3c',
           title: 'My Past',
-          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are my past projects: '
+          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are some of my projects: '
         }),
         _react2.default.createElement(_projects2.default, null),
         _react2.default.createElement(_cardBoard2.default, {
@@ -18402,12 +18402,12 @@ var Header = function (_Component) {
             { className: "row mt-3 mb-3" },
             _react2.default.createElement(
               "div",
-              { className: "col-sm-2" },
+              { className: "col-sm-2 offset-sm-3" },
               _react2.default.createElement("i", { className: "fa fa-map-marker fa-3x fa-fw bounce mb-2" })
             ),
             _react2.default.createElement(
               "div",
-              { className: "col-sm-5" },
+              { className: "col-sm-2" },
               _react2.default.createElement(
                 "h5",
                 null,
@@ -18416,7 +18416,7 @@ var Header = function (_Component) {
             ),
             _react2.default.createElement(
               "div",
-              { className: "col-sm-5" },
+              { className: "col-sm-2" },
               _react2.default.createElement(
                 "h5",
                 null,
@@ -18435,12 +18435,12 @@ var Header = function (_Component) {
             { className: "row mt-3 mb-3" },
             _react2.default.createElement(
               "div",
-              { className: "col-sm-3 offset-sm-3" },
+              { className: "col-sm-4 offset-sm-2" },
               _react2.default.createElement("i", { className: "fa fa-id-badge fa-3x fa-fw mb-2" })
             ),
             _react2.default.createElement(
               "div",
-              { className: "col-sm-3" },
+              { className: "col-sm-4" },
               _react2.default.createElement(
                 "h5",
                 null,
