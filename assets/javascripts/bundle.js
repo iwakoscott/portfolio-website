@@ -18402,12 +18402,12 @@ var Header = function (_Component) {
             { className: "row mt-3 mb-3" },
             _react2.default.createElement(
               "div",
-              { className: "col-sm-2 offset-sm-3" },
-              _react2.default.createElement("i", { className: "fa fa-map-marker fa-3x fa-fw bounce mb-2" })
+              { className: "col-sm-2" },
+              _react2.default.createElement("i", { className: "fa fa-map-marker fa-4x bounce mb-2" })
             ),
             _react2.default.createElement(
               "div",
-              { className: "col-sm-2" },
+              { className: "col-sm-5" },
               _react2.default.createElement(
                 "h5",
                 null,
@@ -18416,7 +18416,7 @@ var Header = function (_Component) {
             ),
             _react2.default.createElement(
               "div",
-              { className: "col-sm-2" },
+              { className: "col-sm-5" },
               _react2.default.createElement(
                 "h5",
                 null,
@@ -18435,12 +18435,12 @@ var Header = function (_Component) {
             { className: "row mt-3 mb-3" },
             _react2.default.createElement(
               "div",
-              { className: "col-sm-4 offset-sm-2" },
-              _react2.default.createElement("i", { className: "fa fa-id-badge fa-3x fa-fw mb-2" })
+              { className: "col-sm-2" },
+              _react2.default.createElement("i", { className: "fa fa-id-badge fa-4x mb-2" })
             ),
             _react2.default.createElement(
               "div",
-              { className: "col-sm-4" },
+              { className: "col-sm-4 offset-sm-3" },
               _react2.default.createElement(
                 "h5",
                 null,
@@ -18663,6 +18663,7 @@ var Footer = function (_Component) {
                         _react2.default.createElement("input", { className: "form-control mb-1 mt-1", type: "email", name: "_replyto", placeholder: "email", required: "true" }),
                         _react2.default.createElement("textarea", { className: "form-control mb-1 mt-1", name: "message", rows: "3", placeholder: "your message", required: "true" }),
                         _react2.default.createElement("input", { type: "text", name: "_gotcha", style: { "display": "none" } }),
+                        _react2.default.createElement("input", { type: "hidden", name: "_next", value: "//" }),
                         _react2.default.createElement(
                           "button",
                           { className: "btn btn-danger btn-lg mt-3 send-button", type: "submit" },

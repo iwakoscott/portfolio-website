@@ -46,6 +46,7 @@ class Footer extends Component {
                     <input className="form-control mb-1 mt-1" type="email" name="_replyto" placeholder="email"  required="true"/>
                     <textarea className="form-control mb-1 mt-1" name="message" rows="3" placeholder="your message" required="true"></textarea>
                     <input type="text" name="_gotcha" style={{"display": "none"}} />
+                    <input type="hidden" name="_next" value="//" />
                     <button className="btn btn-danger btn-lg mt-3 send-button" type="submit"> <i className="fa fa-paper-plane fa-1x"></i> {"Send"}</button>
                   </form>
                 </div>

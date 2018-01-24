@@ -22,7 +22,7 @@
   }
 
   100% {
-    transform: translateX(5px);
+    transform: translateX(0px);
   }
 }
 
@@ -82,7 +82,7 @@ html, body {
 }
 
 #my-name {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 #my-stats .row
