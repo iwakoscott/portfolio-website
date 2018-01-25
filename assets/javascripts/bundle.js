@@ -18629,7 +18629,7 @@ var Footer = function (_Component) {
                 { className: "modal fade", id: "formspree", tabIndex: "-1", role: "dialog", "aria-labelledby": "formspreeTitle", "aria-hidden": "true", "data-backdrop": "static", "data-keyboard": "false" },
                 _react2.default.createElement(
                   "div",
-                  { className: "modal-dialog modal-dialog-centered", role: "document" },
+                  { className: "modal-dialog", role: "document" },
                   _react2.default.createElement(
                     "div",
                     { className: "modal-content" },
