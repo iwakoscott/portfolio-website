@@ -18525,7 +18525,7 @@ function CardBoard(props) {
         "div",
         { className: "col-10 offset-1" },
         _react2.default.createElement(
-          "h1",
+          "h2",
           { className: "text-center card-board-header m-2" },
           props.title
         ),

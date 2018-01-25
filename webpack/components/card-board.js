@@ -11,7 +11,7 @@ function CardBoard(props) {
       </div>
       <div className="row">
         <div className="col-10 offset-1">
-          <h1 className="text-center card-board-header m-2">{props.title}</h1>
+          <h2 className="text-center card-board-header m-2">{props.title}</h2>
           <hr />
         </div>
       </div>
