@@ -18459,7 +18459,7 @@ var Header = function (_Component) {
               "div",
               { className: "col-sm-12 col-md-8 offset-md-2 sliding-card" },
               _react2.default.createElement("img", { id: "profile-img", className: "img-thumbnail mx-auto d-block",
-                src: "assets/images/snow.jpg",
+                src: "{{site.baseurl}}/assets/images/snow.jpg",
                 alt: "me in central park" })
             )
           ),
