@@ -134,13 +134,13 @@ html, body {
 /* Projects */
 
 .card-columns {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .card {
   background: #bf9561;
-  padding: 2px;
+  padding: 5px;
   margin: 5px 0px;
   box-shadow: 0px 0px 10px 0px #727a17;
 }
