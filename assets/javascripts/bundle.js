@@ -18842,7 +18842,7 @@ function Project(props) {
       "div",
       { className: "card-body" },
       _react2.default.createElement(
-        "h2",
+        "h3",
         { className: "card-title" },
         props.name
       ),

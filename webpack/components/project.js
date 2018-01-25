@@ -5,7 +5,7 @@ function Project(props){
     <div className="card">
       <img className="card-img-top img-thumbnail img-project" src={props.thumbnail} alt={props.name} width="100%"/>
       <div className="card-body">
-        <h2 className="card-title">{props.name}</h2>
+        <h3 className="card-title">{props.name}</h3>
         <p className="card-text">{props.description}</p>
         <div className="text-center">
           <div className="btn-group project-buttons" role="group" aria-label="project-buttons">
