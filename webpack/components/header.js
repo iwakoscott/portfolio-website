@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Header extends Component {
 
   render(){
-    const baseurl = "/portfolio-website";
     return (
       <div>
         <div className="container text-center slide sliding-card main">
@@ -37,7 +36,7 @@ class Header extends Component {
           <div className="row">
             <div className="col-sm-12 col-md-8 offset-md-2 sliding-card">
               <img id="profile-img" className="img-thumbnail mx-auto d-block"
-                   src={baseurl + "/assets/images/snow.jpg"}
+                   src={"/assets/images/snow.jpg"}
                    alt="me in central park"/>
             </div>
           </div>
