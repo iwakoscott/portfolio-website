@@ -18460,7 +18460,7 @@ var Header = function (_Component) {
               "div",
               { className: "col-sm-12 col-md-8 offset-md-2 sliding-card" },
               _react2.default.createElement("img", { id: "profile-img", className: "img-thumbnail mx-auto d-block",
-                src: baseurl + "/assets/images/snow.jpg",
+                src: "assets/images/snow.jpg",
                 alt: "me in central park" })
             )
           ),
@@ -18778,11 +18778,22 @@ var Projects = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
 
-    _this.state = { projects: [] };
+    _this.state = {
+      projects: Array(),
+      showProjects: false
+    };
+
+    _this.toggleProjects = _this.toggleProjects.bind(_this);
     return _this;
-  }
+  } // Projects.constructor
 
   _createClass(Projects, [{
+    key: 'toggleProjects',
+    value: function toggleProjects() {
+      this.setState({ showProjects: !this.state.showProjects });
+    } // Projects.toggleProjects
+
+  }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
       var projects = __webpack_require__(32);
@@ -18792,7 +18803,9 @@ var Projects = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var collection = this.state.projects.length > 0 ? this.state.projects.map(function (project, i) {
+      var _this2 = this;
+
+      var collection = this.state.showProjects ? this.state.projects.map(function (project, i) {
         return _react2.default.createElement(_project2.default, { key: i,
           name: project.name,
           thumbnail: project.thumbnail,
@@ -18804,8 +18817,32 @@ var Projects = function (_Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'card-columns' },
-        collection.length > 0 ? collection : ''
+        { className: 'container-fluid' },
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'card-columns' },
+            collection.length > 0 ? collection : ''
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row text-center' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-4 offset-sm-4' },
+            _react2.default.createElement(
+              'button',
+              { className: 'btn btn-danger btn-lg toggle-projects-btn',
+                onClick: function onClick() {
+                  _this2.toggleProjects();
+                } },
+              this.state.showProjects ? "Hide Projects" : "Show Projects"
+            )
+          )
+        )
       );
     } // Projects.render
 
@@ -18879,7 +18916,7 @@ exports.default = Project;
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = [{"name":"Dynamic Coffee Website","thumbnail":"/portfolio-website/assets/images/coffee-database.png","description":"Received personal praise from the administrator for exhibiting great knowledge and skills in Python, SQLAlchemy, and Flask on a final project: a data-driven coffee catalog website. (A review of my work: https://goo.gl/3kHmGg.) Successfully deployed my Flask website using Amazon Lightsail.","live":"http://35.162.223.26/","code":"https://goo.gl/fvG3XH","rank":"small"},{"name":"Twitch Viewer App","thumbnail":"/portfolio-website/assets/images/twitch-app.png","description":"Designed and implemented a Twitch viewing application which allows the user to check which channels are currently online and plays the current feed upon clicking the channels name.","live":"https://iwakoscott.github.io/twitch-app/","code":"https://github.com/iwakoscott/twitch-app","rank":"medium"},{"name":"Javascript Calculator","thumbnail":"/portfolio-website/assets/images/js-calculator.png","description":"Implemented a calculator in React.js. The user can use the calculator in the web browser like a physical calculator. I styled the calculator using CSS to look as real as possible.","live":"https://iwakoscott.github.io/javascript-calculator/","code":"https://github.com/iwakoscott/javascript-calculator","rank":"medium"},{"name":"Pomodoro Timer","thumbnail":"/portfolio-website/assets/images/pomodoro-timer.png","description":"Developed a version of a Pomodoro Timer in React.js. Allows the user to select a work time and break time and indicates the user when the time runs out with a sound and web browser notification. The Frontend design was inspired by the layers of a tomato (or Pomodoro.)","live":"https://iwakoscott.github.io/pomodoro/","code":"https://github.com/iwakoscott/pomodoro","rank":"large"},{"name":"Chef's Portfolio Website","thumbnail":"/portfolio-website/assets/images/chefs-site.png","description":"Designed and implemented a Chef's professional portfolio website using React.js and deployed the website using Github Pages. Constructed an Instagram component that displayed the three most recent Instagram posts using the Instagram API.","live":"http://keikoiwako.com/","code":"https://github.com/iwakoscott/keikoiwako","rank":"small"}]
+module.exports = [{"name":"Dynamic Coffee Website","thumbnail":"assets/images/coffee-database.png","description":"Received personal praise from the administrator for exhibiting great knowledge and skills in Python, SQLAlchemy, and Flask on a final project: a data-driven coffee catalog website. (A review of my work: https://goo.gl/3kHmGg.) Successfully deployed my Flask website using Amazon Lightsail.","live":"http://35.162.223.26/","code":"https://goo.gl/fvG3XH","rank":"small"},{"name":"Twitch Viewer App","thumbnail":"assets/images/twitch-app.png","description":"Designed and implemented a Twitch viewing application which allows the user to check which channels are currently online and plays the current feed upon clicking the channels name.","live":"https://iwakoscott.github.io/twitch-app/","code":"https://github.com/iwakoscott/twitch-app","rank":"medium"},{"name":"Javascript Calculator","thumbnail":"assets/images/js-calculator.png","description":"Implemented a calculator in React.js. The user can use the calculator in the web browser like a physical calculator. I styled the calculator using CSS to look as real as possible.","live":"https://iwakoscott.github.io/javascript-calculator/","code":"https://github.com/iwakoscott/javascript-calculator","rank":"medium"},{"name":"Pomodoro Timer","thumbnail":"assets/images/pomodoro-timer.png","description":"Developed a version of a Pomodoro Timer in React.js. Allows the user to select a work time and break time and indicates the user when the time runs out with a sound and web browser notification. The Frontend design was inspired by the layers of a tomato (or Pomodoro.)","live":"https://iwakoscott.github.io/pomodoro/","code":"https://github.com/iwakoscott/pomodoro","rank":"large"},{"name":"Chef's Portfolio Website","thumbnail":"assets/images/chefs-site.png","description":"Designed and implemented a Chef's professional portfolio website using React.js and deployed the website using Github Pages. Constructed an Instagram component that displayed the three most recent Instagram posts using the Instagram API.","live":"http://keikoiwako.com/","code":"https://github.com/iwakoscott/keikoiwako","rank":"small"}]
 
 /***/ })
 /******/ ]);

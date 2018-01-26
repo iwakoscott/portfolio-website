@@ -73,7 +73,7 @@ html, body {
 .modal-title,
 .send-button,
 .card-title,
-.project-buttons {
+.toggle-projects-btn {
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   color: white;

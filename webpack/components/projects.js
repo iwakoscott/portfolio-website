@@ -5,8 +5,17 @@ class Projects extends Component {
 
   constructor(){
     super();
-    this.state = { projects: [] };
-  }
+    this.state = {
+      projects: Array(),
+      showProjects: false
+    };
+
+    this.toggleProjects = this.toggleProjects.bind(this);
+  } // Projects.constructor
+
+  toggleProjects(){
+    this.setState({ showProjects: !this.state.showProjects });
+  } // Projects.toggleProjects
 
   componentDidMount(){
     let projects = require('../../_data/projects.json');
@@ -14,7 +23,7 @@ class Projects extends Component {
   } // Projects.componentDidMount
 
   render(){
-    const collection = this.state.projects.length > 0 ? this.state.projects.map((project, i) => {
+    const collection = this.state.showProjects ? this.state.projects.map((project, i) => {
       return (
           <Project key={i}
                    name={project.name}
@@ -27,8 +36,18 @@ class Projects extends Component {
     }) : [];
 
     return (
-      <div className="card-columns">
-        { collection.length > 0 ? collection : ''}
+      <div className="container-fluid">
+        <div className="row">
+          <div className="card-columns">
+            { collection.length > 0 ? collection : ''}
+          </div>
+        </div>
+        <div className="row text-center">
+          <div className="col-sm-4 offset-sm-4">
+            <button className="btn btn-danger btn-lg toggle-projects-btn"
+                    onClick={() => {this.toggleProjects()}}>{this.state.showProjects ? "Hide Projects" : "Show Projects"}</button>
+          </div>
+        </div>
       </div>
     );
   } // Projects.render
