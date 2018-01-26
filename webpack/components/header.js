@@ -37,7 +37,7 @@ class Header extends Component {
           <div className="row">
             <div className="col-sm-12 col-md-8 offset-md-2 sliding-card">
               <img id="profile-img" className="img-thumbnail mx-auto d-block"
-                   src={"assets/images/snow.jpg"}
+                   src={baseurl + "/assets/images/snow.jpg"}
                    alt="me in central park"/>
             </div>
           </div>
