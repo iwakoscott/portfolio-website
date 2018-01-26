@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Project from './project.js';
 
 class Projects extends Component {
@@ -39,12 +40,17 @@ class Projects extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="card-columns">
-            { collection.length > 0 ? collection : ''}
+            <ReactCSSTransitionGroup
+              transitionName="fade"
+              transitionEnterTimeout={300}
+              transitionLeaveTimeout={300}>
+              { collection.length > 0 ? collection : ''}
+            </ReactCSSTransitionGroup>
           </div>
         </div>
         <div className="row text-center">
           <div className="col-sm-4 offset-sm-4">
-            <button className="btn btn-danger btn-lg toggle-projects-btn"
+            <button className="btn btn-danger btn-lg toggle-projects-btn mb-3 mt-3"
                     onClick={() => {this.toggleProjects()}}>{this.state.showProjects ? "Hide Projects" : "Show Projects"}</button>
           </div>
         </div>
