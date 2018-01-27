@@ -63,6 +63,9 @@ class Footer extends Component {
               <li className="nav-item list-inline-item">
                 <a className="nav-link" href="https://www.linkedin.com/in/iwakoscott/" target="_blank"><i className="fa fa-linkedin-square fa-1x fa-fw"></i>  <span className="user-name">iwakoscott</span></a>
               </li>
+              <li>
+                <a className="nav-link" href="/assets/media/resume24.pdf" target="_blank">resume</a><i className="fa fa-file-pdf-o fa-1x fa-fw"></i>
+              </li>
             </ul>
             </div>
             <div className="col-sm-2 col-md-4">
