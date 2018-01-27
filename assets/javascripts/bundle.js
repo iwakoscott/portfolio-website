@@ -1171,6 +1171,7 @@ var Website = function (_Component) {
           quote: '',
           whoAmI: 'I am a Jr. Frontend Developer and Espresso Enthusiast.' }),
         _react2.default.createElement(_cardBoard2.default, {
+          idLabel: 'my-past',
           faClass: 'fa fa-clock-o',
           backgroundColor: '#e74c3c',
           title: 'My Past',
@@ -1178,12 +1179,14 @@ var Website = function (_Component) {
         }),
         _react2.default.createElement(_projects2.default, null),
         _react2.default.createElement(_cardBoard2.default, {
+          idLabel: 'where-im-going',
           faClass: 'fa fa-compass',
           backgroundColor: '#414d0b',
           title: 'Where am I going?',
           content: 'I am learning all there is to Frontend Web Development and\n                   working my way to find my first Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Backend Development and reach my ultimate goal : working as a\n                   Fullstack Engineer.'
         }),
         _react2.default.createElement(_cardBoard2.default, {
+          idLabel: 'what-im-working-on',
           faClass: 'fa fa-wrench',
           title: 'What am I working on?',
           backgroundColor: '#3498db',
@@ -18610,7 +18613,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function CardBoard(props) {
   return _react2.default.createElement(
     "div",
-    { className: "container-fluid mt-5 mb-5 card-board" },
+    { id: props.idLabel, className: "container-fluid mt-5 mb-5 card-board" },
     _react2.default.createElement(
       "div",
       { className: "row" },
@@ -18912,6 +18915,9 @@ var Projects = function (_Component) {
     key: 'toggleProjects',
     value: function toggleProjects() {
       this.setState({ showProjects: !this.state.showProjects });
+      if (this.state.showProjects) {
+        document.getElementById("where-im-going").scrollIntoView();
+      }
     } // Projects.toggleProjects
 
   }, {

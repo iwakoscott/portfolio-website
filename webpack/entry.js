@@ -27,6 +27,7 @@ class Website extends Component {
           whoAmI="I am a Jr. Frontend Developer and Espresso Enthusiast."/>
 
         <CardBoard
+          idLabel="my-past"
           faClass="fa fa-clock-o"
           backgroundColor="#e74c3c"
           title="My Past"
@@ -41,6 +42,7 @@ class Website extends Component {
         <Projects />
 
         <CardBoard
+          idLabel="where-im-going"
           faClass="fa fa-compass"
           backgroundColor="#414d0b"
           title="Where am I going?"
@@ -51,6 +53,7 @@ class Website extends Component {
                    Fullstack Engineer.`}
         />
         <CardBoard
+          idLabel="what-im-working-on"
           faClass="fa fa-wrench"
           title="What am I working on?"
           backgroundColor="#3498db"

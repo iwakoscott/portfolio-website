@@ -16,6 +16,9 @@ class Projects extends Component {
 
   toggleProjects(){
     this.setState({ showProjects: !this.state.showProjects });
+    if (this.state.showProjects) {
+      document.getElementById("where-im-going").scrollIntoView();
+    }
   } // Projects.toggleProjects
 
   componentDidMount(){
