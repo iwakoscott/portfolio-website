@@ -44,7 +44,8 @@
 
 html, body {
   font-family: 'Cousine', monospace;
-  background: #a2ab58;
+  /*background: #a2ab58;*/
+  background: #6ab04c;
   letter-spacing: 1px;
 }
 
@@ -93,7 +94,8 @@ html, body {
 }
 
 .fa-map-marker {
-  color: #e74c3c;
+  /*color: #e74c3c;*/
+  color: #eb4d4b;
 }
 
 .fa-id-badge {
