@@ -122,7 +122,7 @@ html, body {
  /*Card Board*/
 
 .card-board {
-  background: #af8654;
+  background: #a58855;
   border-top-style: dashed;
   border-bottom-style: dashed;
   border-radius: 4px;
@@ -201,11 +201,11 @@ footer a, footer a:hover, footer a:visited{
 }
 
 .modal-content {
-    background: #af8654;
+    background: #a58855;
 }
 
 .send-button {
-    background: #af8654;
+    background: #a58855;
     border-style: dashed;
     border-color: black;
     border-width: medium;
