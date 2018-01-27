@@ -45,7 +45,7 @@ class Website extends Component {
           backgroundColor="#414d0b"
           title="Where am I going?"
           content={`I am learning all there is to Frontend Web Development and
-                   working my way to find my first developer position at a
+                   working my way to find my first Developer position at a
                    prominent tech company. From there, I hope to delve into more
                    Backend Development and reach my ultimate goal : working as a
                    Fullstack Engineer.`}
@@ -56,8 +56,8 @@ class Website extends Component {
           backgroundColor="#3498db"
           content={`I am currently a Web Development Intern at the California Center for Cooperative Development
                    where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS
-                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working
-                   on building my first ever blog about espressos I try around the world - I will add a link to it
+                   architecture, PHP, and the CSS Grid Layout. I am also working
+                   on building my first ever blog about espressos (built using Jekyll/React.js) I try around the world - I will add a link to it
                    when I finish building it!`}
         />
         <Footer />

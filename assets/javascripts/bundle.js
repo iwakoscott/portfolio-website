@@ -1181,13 +1181,13 @@ var Website = function (_Component) {
           faClass: 'fa fa-compass',
           backgroundColor: '#414d0b',
           title: 'Where am I going?',
-          content: 'I am learning all there is to Frontend Web Development and\n                   working my way to find my first developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Backend Development and reach my ultimate goal : working as a\n                   Fullstack Engineer.'
+          content: 'I am learning all there is to Frontend Web Development and\n                   working my way to find my first Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Backend Development and reach my ultimate goal : working as a\n                   Fullstack Engineer.'
         }),
         _react2.default.createElement(_cardBoard2.default, {
           faClass: 'fa fa-wrench',
           title: 'What am I working on?',
           backgroundColor: '#3498db',
-          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, CSS Grid Layout, and Jekyll (A static website generator.) I am also working\n                   on building my first ever blog about espressos I try around the world - I will add a link to it\n                   when I finish building it!'
+          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, and the CSS Grid Layout. I am also working\n                   on building my first ever blog about espressos (built using Jekyll/React.js) I try around the world - I will add a link to it\n                   when I finish building it!'
         }),
         _react2.default.createElement(_footer2.default, null)
       );
