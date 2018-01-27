@@ -17,7 +17,8 @@ class Projects extends Component {
   toggleProjects(){
     this.setState({ showProjects: !this.state.showProjects });
     if (this.state.showProjects) {
-      document.getElementById("where-im-going").scrollIntoView();
+      setTimeout(() => { document.getElementById("where-im-going").scrollIntoView();
+ }, 300);
     }
   } // Projects.toggleProjects
 
@@ -53,7 +54,7 @@ class Projects extends Component {
         </div>
         <div className="row text-center">
           <div className="col-sm-4 offset-sm-4">
-            <button className="btn btn-danger btn-lg toggle-projects-btn mb-3 mt-3"
+            <button id="toggle-projects-button" className="btn btn-danger btn-lg toggle-projects-btn mb-3 mt-3"
                     onClick={() => {this.toggleProjects()}}>{this.state.showProjects ? "Hide Projects" : "Show Projects"}</button>
           </div>
         </div>

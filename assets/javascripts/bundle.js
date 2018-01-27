@@ -18916,7 +18916,9 @@ var Projects = function (_Component) {
     value: function toggleProjects() {
       this.setState({ showProjects: !this.state.showProjects });
       if (this.state.showProjects) {
-        document.getElementById("where-im-going").scrollIntoView();
+        setTimeout(function () {
+          document.getElementById("where-im-going").scrollIntoView();
+        }, 300);
       }
     } // Projects.toggleProjects
 
@@ -18969,7 +18971,7 @@ var Projects = function (_Component) {
             { className: 'col-sm-4 offset-sm-4' },
             _react2.default.createElement(
               'button',
-              { className: 'btn btn-danger btn-lg toggle-projects-btn mb-3 mt-3',
+              { id: 'toggle-projects-button', className: 'btn btn-danger btn-lg toggle-projects-btn mb-3 mt-3',
                 onClick: function onClick() {
                   _this2.toggleProjects();
                 } },
