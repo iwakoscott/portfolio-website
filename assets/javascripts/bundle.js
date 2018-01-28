@@ -1169,7 +1169,7 @@ var Website = function (_Component) {
         _react2.default.createElement(_header2.default, {
           name: 'Satoshi Iwako',
           quote: '',
-          whoAmI: 'I am a Jr. Frontend Developer and Espresso Enthusiast.' }),
+          whoAmI: 'I am a Jr. Front-end Developer and Espresso Enthusiast.' }),
         _react2.default.createElement(_cardBoard2.default, {
           idLabel: 'my-past',
           faClass: 'fa fa-clock-o',
@@ -1183,7 +1183,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-compass',
           backgroundColor: '#414d0b',
           title: 'Where am I going?',
-          content: 'I am learning all there is to Frontend Web Development and\n                   working my way to find my first Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Backend Development and reach my ultimate goal : working as a\n                   Full Stack Engineer.'
+          content: 'I am learning all there is to Front-end Web Development and\n                   working my way to find my first Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Back-end Development and reach my ultimate goal : working as a\n                   Full Stack Engineer.'
         }),
         _react2.default.createElement(_cardBoard2.default, {
           idLabel: 'what-im-working-on',

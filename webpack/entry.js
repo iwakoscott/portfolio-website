@@ -24,7 +24,7 @@ class Website extends Component {
         <Header
           name="Satoshi Iwako"
           quote=""
-          whoAmI="I am a Jr. Frontend Developer and Espresso Enthusiast."/>
+          whoAmI="I am a Jr. Front-end Developer and Espresso Enthusiast."/>
 
         <CardBoard
           idLabel="my-past"
@@ -46,10 +46,10 @@ class Website extends Component {
           faClass="fa fa-compass"
           backgroundColor="#414d0b"
           title="Where am I going?"
-          content={`I am learning all there is to Frontend Web Development and
+          content={`I am learning all there is to Front-end Web Development and
                    working my way to find my first Developer position at a
                    prominent tech company. From there, I hope to delve into more
-                   Backend Development and reach my ultimate goal : working as a
+                   Back-end Development and reach my ultimate goal : working as a
                    Full Stack Engineer.`}
         />
         <CardBoard
