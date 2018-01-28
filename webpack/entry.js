@@ -33,7 +33,7 @@ class Website extends Component {
           title="My Past"
           content={`I graduated from the University of California, Davis with a
                     Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,
-                    I took a Fullstack Web Development Nanodegree on Udacity where I found
+                    I took a Full Stack Web Development Nanodegree on Udacity where I found
                     my passion for Web Development. I fell in love with Web Development so much
                     that I completed the program in just 2 months (on average, it takes 6 months to complete.)
                     I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are some of my projects: `}
@@ -50,7 +50,7 @@ class Website extends Component {
                    working my way to find my first Developer position at a
                    prominent tech company. From there, I hope to delve into more
                    Backend Development and reach my ultimate goal : working as a
-                   Fullstack Engineer.`}
+                   Full Stack Engineer.`}
         />
         <CardBoard
           idLabel="what-im-working-on"

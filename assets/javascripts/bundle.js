@@ -1175,7 +1175,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-clock-o',
           backgroundColor: '#e74c3c',
           title: 'My Past',
-          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Fullstack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are some of my projects: '
+          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Full Stack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are some of my projects: '
         }),
         _react2.default.createElement(_projects2.default, null),
         _react2.default.createElement(_cardBoard2.default, {
@@ -1183,7 +1183,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-compass',
           backgroundColor: '#414d0b',
           title: 'Where am I going?',
-          content: 'I am learning all there is to Frontend Web Development and\n                   working my way to find my first Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Backend Development and reach my ultimate goal : working as a\n                   Fullstack Engineer.'
+          content: 'I am learning all there is to Frontend Web Development and\n                   working my way to find my first Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Backend Development and reach my ultimate goal : working as a\n                   Full Stack Engineer.'
         }),
         _react2.default.createElement(_cardBoard2.default, {
           idLabel: 'what-im-working-on',
@@ -18918,7 +18918,7 @@ var Projects = function (_Component) {
       if (this.state.showProjects) {
         setTimeout(function () {
           document.getElementById("where-im-going").scrollIntoView();
-        }, 300);
+        }, 50);
       }
     } // Projects.toggleProjects
 
