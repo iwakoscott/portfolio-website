@@ -18,7 +18,7 @@ class Projects extends Component {
     this.setState({ showProjects: !this.state.showProjects });
     if (this.state.showProjects) {
       setTimeout(() => { document.getElementById("where-im-going").scrollIntoView();
- }, 50);
+ }, 100);
     }
   } // Projects.toggleProjects
 
@@ -47,7 +47,7 @@ class Projects extends Component {
             <ReactCSSTransitionGroup
               transitionName="fade"
               transitionEnterTimeout={300}
-              transitionLeaveTimeout={300}>
+              transitionLeaveTimeout={100}>
               { collection.length > 0 ? collection : ''}
             </ReactCSSTransitionGroup>
           </div>
