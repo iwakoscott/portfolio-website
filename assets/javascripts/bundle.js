@@ -18918,7 +18918,7 @@ var Projects = function (_Component) {
       if (this.state.showProjects) {
         setTimeout(function () {
           document.getElementById("where-im-going").scrollIntoView();
-        }, 50);
+        }, 100);
       }
     } // Projects.toggleProjects
 
