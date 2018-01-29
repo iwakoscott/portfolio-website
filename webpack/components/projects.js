@@ -47,7 +47,7 @@ class Projects extends Component {
             <ReactCSSTransitionGroup
               transitionName="fade"
               transitionEnterTimeout={300}
-              transitionLeaveTimeout={100}>
+              transitionLeaveTimeout={50}>
               { collection.length > 0 ? collection : ''}
             </ReactCSSTransitionGroup>
           </div>

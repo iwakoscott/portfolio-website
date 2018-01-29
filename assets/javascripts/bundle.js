@@ -18958,7 +18958,7 @@ var Projects = function (_Component) {
               {
                 transitionName: 'fade',
                 transitionEnterTimeout: 300,
-                transitionLeaveTimeout: 100 },
+                transitionLeaveTimeout: 50 },
               collection.length > 0 ? collection : ''
             )
           )
