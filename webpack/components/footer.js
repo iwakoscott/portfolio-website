@@ -64,7 +64,7 @@ class Footer extends Component {
                 <a className="nav-link" href="https://www.linkedin.com/in/iwakoscott/" target="_blank"><i className="fa fa-linkedin-square fa-1x fa-fw"></i>  <span className="user-name">iwakoscott</span></a>
               </li>
               <li>
-                <a className="nav-link" href="/assets/media/resume24.pdf" target="_blank"><i className="fa fa-file-pdf-o fa-1x fa-fw"></i>  <span className="user-name">resume</span></a>
+                <a className="nav-link" href="/assets/media/resume25.pdf" target="_blank"><i className="fa fa-file-pdf-o fa-1x fa-fw"></i>  <span className="user-name">resume</span></a>
               </li>
             </ul>
             </div>

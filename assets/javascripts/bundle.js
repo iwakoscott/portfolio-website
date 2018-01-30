@@ -18825,7 +18825,7 @@ var Footer = function (_Component) {
                   null,
                   _react2.default.createElement(
                     "a",
-                    { className: "nav-link", href: "/assets/media/resume24.pdf", target: "_blank" },
+                    { className: "nav-link", href: "/assets/media/resume25.pdf", target: "_blank" },
                     _react2.default.createElement("i", { className: "fa fa-file-pdf-o fa-1x fa-fw" }),
                     "  ",
                     _react2.default.createElement(
