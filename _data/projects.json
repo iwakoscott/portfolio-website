@@ -26,7 +26,7 @@
   {
     "name": "Pomodoro Timer",
     "thumbnail": "/assets/images/pomodoro-timer.png",
-    "description": "Developed a version of a Pomodoro Timer in React.js. Allows the user to select a work time and break time and indicates the user when the time runs out with a sound and web browser notification. The Frontend design was inspired by the layers of a tomato (or Pomodoro.)",
+    "description": "Developed a version of a Pomodoro Timer in React.js. Allows the user to select a work time and break time and indicates the user when the time runs out with a sound and web browser notification. The Front-end design was inspired by the layers of a tomato",
     "live": "https://iwakoscott.github.io/pomodoro/",
     "code": "https://github.com/iwakoscott/pomodoro",
     "rank": "large"
