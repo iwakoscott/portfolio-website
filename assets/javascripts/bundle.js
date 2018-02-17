@@ -18565,21 +18565,8 @@ var Header = function (_Component) {
               "div",
               { className: "col-sm-12 col-md-8 offset-md-2 sliding-card" },
               _react2.default.createElement("img", { id: "profile-img", className: "img-thumbnail mx-auto d-block",
-                src: "/assets/images/snow.jpg",
+                src: "/assets/images/goldengate.jpg",
                 alt: "me in central park" })
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "row" },
-            _react2.default.createElement(
-              "div",
-              { className: "col-sm-2 offset-sm-5 col-md-8 offset-md-2" },
-              _react2.default.createElement(
-                "h6",
-                { className: "text-center" },
-                "Central Park, NYC"
-              )
             )
           )
         )

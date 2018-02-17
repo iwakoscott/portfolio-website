@@ -36,13 +36,8 @@ class Header extends Component {
           <div className="row">
             <div className="col-sm-12 col-md-8 offset-md-2 sliding-card">
               <img id="profile-img" className="img-thumbnail mx-auto d-block"
-                   src={"/assets/images/snow.jpg"}
+                   src={"/assets/images/goldengate.jpg"}
                    alt="me in central park"/>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-2 offset-sm-5 col-md-8 offset-md-2">
-              <h6 className="text-center">{"Central Park, NYC"}</h6>
             </div>
           </div>
         </div>
