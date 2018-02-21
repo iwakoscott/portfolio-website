@@ -14,7 +14,7 @@ class Header extends Component {
           </div>
           <div className="row mt-3 mb-3">
             <div className="col-sm-2">
-              <i className="fa fa-map-marker fa-4x bounce mb-2"></i>
+              <i className="fa fa-map-pin fa-4x fall mb-2"></i>
             </div>
             <div className="col-sm-5">
               <h5>{"Davis, CA USA"}</h5>

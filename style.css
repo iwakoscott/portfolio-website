@@ -1,3 +1,19 @@
+.fall {
+  animation: fall 300ms ease-in-out;
+  animation-delay: 500ms;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY("100%");
+    opacity: 1;
+  }
+}
 
 .fade-enter {
   opacity: 0;
@@ -111,7 +127,7 @@ html, body {
   align-items: baseline;
 }
 
-.fa-map-marker {
+.fa-map-pin {
   color: #e74c3c;
 }
 

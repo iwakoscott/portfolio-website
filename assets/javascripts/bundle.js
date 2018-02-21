@@ -1190,7 +1190,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-wrench',
           title: 'What am I working on?',
           backgroundColor: '#3498db',
-          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, and the CSS Grid Layout. I am also working\n                   on building my first ever blog about espressos (built using Jekyll/React.js) I try around the world - I will add a link to it\n                   when I finish building it!'
+          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, and the CSS Grid Layout. I am also working on building a Content Management Website\n                   for the Knights Landing One Health Clinic which is set to be deployed by the end of March 2018.'
         }),
         _react2.default.createElement(_footer2.default, null)
       );
@@ -18509,7 +18509,7 @@ var Header = function (_Component) {
             _react2.default.createElement(
               "div",
               { className: "col-sm-2" },
-              _react2.default.createElement("i", { className: "fa fa-map-marker fa-4x bounce mb-2" })
+              _react2.default.createElement("i", { className: "fa fa-map-pin fa-4x fall mb-2" })
             ),
             _react2.default.createElement(
               "div",
