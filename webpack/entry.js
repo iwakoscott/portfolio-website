@@ -59,9 +59,8 @@ class Website extends Component {
           backgroundColor="#3498db"
           content={`I am currently a Web Development Intern at the California Center for Cooperative Development
                    where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS
-                   architecture, PHP, and the CSS Grid Layout. I am also working
-                   on building my first ever blog about espressos (built using Jekyll/React.js) I try around the world - I will add a link to it
-                   when I finish building it!`}
+                   architecture, PHP, and the CSS Grid Layout. I am also working on building a Content Management Website
+                   for the Knights Landing One Health Clinic which is set to be deployed by the end of March 2018.`}
         />
         <Footer />
       </div>
