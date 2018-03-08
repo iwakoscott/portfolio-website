@@ -20690,7 +20690,7 @@ function Project(props) {
           ),
           _react2.default.createElement(
             "a",
-            { className: "btn " + (props.codeUrl ? 'btn-outline-light' : 'btn-outline-dark'),
+            { className: "btn " + (props.codeUrl ? 'btn-outline-light' : 'btn-outline-secondary'),
               style: props.codeUrl ? { pointerEvents: "auto" } : { pointerEvents: "none" },
               href: props.codeUrl,
               target: "_blank" },
