@@ -43,7 +43,7 @@
     "name": "Knights Landing Clinic Site",
     "thumbnail": "/assets/images/knightslandingclinic.png",
     "description": "Lead developer and designer. Built using Jekyll (a static website generator) + Siteleaf (CMS.)",
-    "live": "www.knightslandingclinic.org",
+    "live": "http://www.knightslandingclinic.org",
     "code": "",
     "rank": "large"
   }
