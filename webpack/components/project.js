@@ -10,7 +10,11 @@ function Project(props){
         <div className="text-center">
           <div className="btn-group project-buttons" role="group" aria-label="project-buttons">
             <a className="btn btn-outline-light" href={props.liveUrl} target="_blank">{"Live"}</a>
-            <a className="btn btn-outline-light" href={props.codeUrl} target="_blank">{"Code"}</a>
+            <a className={"btn " + (props.codeUrl ? 'btn-outline-light' : 'btn-outline-dark')}
+               style={props.codeUrl ? {pointerEvents: "auto"} : {pointerEvents: "none"}}
+               href={props.codeUrl}
+               target="_blank">
+               {"Code"}</a>
           </div>
         </div>
       </div>
