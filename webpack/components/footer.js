@@ -5,7 +5,8 @@ class Footer extends Component {
   constructor(props){
     super();
     this.state = {
-      openEnvelope: false
+      openEnvelope: false,
+      year: (new Date()).getFullYear()
     }
 
     this.toggleButton = this.toggleButton.bind(this);
@@ -69,7 +70,7 @@ class Footer extends Component {
             </ul>
             </div>
             <div className="col-sm-2 col-md-4">
-              <span>{"COPYRIGHT "} &copy; {" 2018 Satoshi Scott Iwako"} </span>
+              <span>{"COPYRIGHT "} &copy; {this.state.year + " Satoshi Scott Iwako"} </span>
             </div>
           </div>
         </div>

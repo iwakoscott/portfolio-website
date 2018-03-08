@@ -18676,7 +18676,8 @@ var Footer = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this));
 
     _this.state = {
-      openEnvelope: false
+      openEnvelope: false,
+      year: new Date().getFullYear()
     };
 
     _this.toggleButton = _this.toggleButton.bind(_this);
@@ -18832,7 +18833,7 @@ var Footer = function (_Component) {
                 null,
                 "COPYRIGHT ",
                 " \xA9 ",
-                " 2018 Satoshi Scott Iwako",
+                this.state.year + " Satoshi Scott Iwako",
                 " "
               )
             )
