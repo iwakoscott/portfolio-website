@@ -1,5 +1,13 @@
 [
   {
+    "name": "Mission Control",
+    "thumbnail": "/assets/images/mission-control.png",
+    "description": "Built a Firebase React application to keep track of my 100 Days of Code challenge. Used Redux to manage the UI state, features: ability to log in as Admin to add or edit posts. All logs get deleted after count down completes.",
+    "live": "https://t.co/8WNPfxRGKI",
+    "code": "",
+    "rank": "large"
+  },
+  {
     "name": "Dynamic Coffee Website",
     "thumbnail": "/assets/images/coffee-database.png",
     "description": "Received personal praise from the administrator for exhibiting great knowledge and skills in Python, SQLAlchemy, and Flask on a final project: a data-driven coffee catalog website. (A review of my work: https://goo.gl/3kHmGg.) Successfully deployed my Flask website using Amazon Lightsail.",
