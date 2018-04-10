@@ -28,7 +28,7 @@ class Header extends Component {
               <i className="fa fa-id-badge fa-4x mb-2"></i>
             </div>
             <div className="col-sm-4 offset-sm-3">
-              <h5>{"Front-end Developer at Foodnome"}</h5>
+              <h5>{"Front-end Developer"}</h5>
             </div>
           </div>
         </div>

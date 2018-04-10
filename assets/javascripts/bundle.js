@@ -1190,7 +1190,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-wrench',
           title: 'What am I working on?',
           backgroundColor: '#3498db',
-          content: 'I am currently working as a Front-end Developer for a local startup in Davis called Foodnome. The project I am working on right now is building a modern, responsive static website (using Gatsby.js and React) for the startup to use to pitch to potential investors. I am also participating in #100DaysofCode on Twitter where I am publicly committed to coding for a minimum of 1 hour/day for 100 days. Follow my #100DaysofCode journey on my web app, Mission Control (checkout my projects section!)'
+          content: 'I am currently working for a local startup in Davis called Foodnome. I am building a modern, responsive static website (using Gatsby.js and React) for the startup to use to pitch to potential investors. I am also participating in #100DaysofCode on Twitter where I am publicly committed to coding for a minimum of 1 hour/day for 100 days. Follow my #100DaysofCode journey on my web app, Mission Control (checkout my projects section!)'
         }),
         _react2.default.createElement(_footer2.default, null)
       );
@@ -18550,7 +18550,7 @@ var Header = function (_Component) {
               _react2.default.createElement(
                 "h5",
                 null,
-                "Front-end Developer at Foodnome"
+                "Front-end Developer"
               )
             )
           )
