@@ -32,8 +32,8 @@ class Website extends Component {
           backgroundColor="#e74c3c"
           title="My Past"
           content={`I graduated from the University of California, Davis with a
-                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,
-                    I took a Full Stack Web Development Nanodegree on Udacity where I found
+                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduating,
+                    I took a Full Stack Nanodegree on Udacity where I found
                     my passion for Web Development. I fell in love with Web Development so much
                     that I completed the program in just 2 months (on average, it takes 6 months to complete.)
                     I wanted to keep learning so I have been learning what I can on FreeCodeCamp, Udemy, and Tyler Mcginnis' React + Redux courses. Here are some of my projects: `}
@@ -47,7 +47,7 @@ class Website extends Component {
           backgroundColor="#414d0b"
           title="Where am I going?"
           content={`I am learning all there is to Front-end Web Development and
-                   working my way to find my first Developer position at a
+                   working my way to find my first Front-end Developer position at a
                    prominent tech company. From there, I hope to delve into more
                    Back-end Development and reach my ultimate goal : work as a
                    Full Stack Engineer.`}
