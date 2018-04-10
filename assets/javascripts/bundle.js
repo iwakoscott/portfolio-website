@@ -1169,13 +1169,13 @@ var Website = function (_Component) {
         _react2.default.createElement(_header2.default, {
           name: 'Satoshi Iwako',
           quote: '',
-          whoAmI: 'I am a Jr. Front-end Developer and Espresso Enthusiast.' }),
+          whoAmI: 'I am a Front-end Developer.' }),
         _react2.default.createElement(_cardBoard2.default, {
           idLabel: 'my-past',
           faClass: 'fa fa-clock-o',
           backgroundColor: '#e74c3c',
           title: 'My Past',
-          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Full Stack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are some of my projects: '
+          content: 'I graduated from the University of California, Davis with a\n                    Bachelors of Science in Applied Mathematics in the Fall of 2016. Upon graduation,\n                    I took a Full Stack Web Development Nanodegree on Udacity where I found\n                    my passion for Web Development. I fell in love with Web Development so much\n                    that I completed the program in just 2 months (on average, it takes 6 months to complete.)\n                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp, Udemy, and Tyler Mcginnis\' React + Redux courses. Here are some of my projects: '
         }),
         _react2.default.createElement(_projects2.default, null),
         _react2.default.createElement(_cardBoard2.default, {
@@ -1183,14 +1183,14 @@ var Website = function (_Component) {
           faClass: 'fa fa-compass',
           backgroundColor: '#414d0b',
           title: 'Where am I going?',
-          content: 'I am learning all there is to Front-end Web Development and\n                   working my way to find my first Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Back-end Development and reach my ultimate goal : working as a\n                   Full Stack Engineer.'
+          content: 'I am learning all there is to Front-end Web Development and\n                   working my way to find my first Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Back-end Development and reach my ultimate goal : work as a\n                   Full Stack Engineer.'
         }),
         _react2.default.createElement(_cardBoard2.default, {
           idLabel: 'what-im-working-on',
           faClass: 'fa fa-wrench',
           title: 'What am I working on?',
           backgroundColor: '#3498db',
-          content: 'I am currently a Web Development Intern at the California Center for Cooperative Development\n                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS\n                   architecture, PHP, and the CSS Grid Layout. I am also working on building a Content Management Website\n                   for the Knights Landing One Health Clinic which is set to be deployed by the end of March 2018.'
+          content: 'I am currently working for a local startup in Davis called Foodnome as a Front-end Developer. The project I am working on right now is building\n            a modern, responsive static website for the startup to use to pitch to potential investors using Gatsby.js and React.\n            '
         }),
         _react2.default.createElement(_footer2.default, null)
       );
@@ -18550,14 +18550,14 @@ var Header = function (_Component) {
               _react2.default.createElement(
                 "h5",
                 null,
-                "Web Development Intern at the CCCD"
+                "Front-end Developer at Foodnome"
               )
             )
           )
         ),
         _react2.default.createElement(
           "div",
-          { className: "container slide" },
+          { className: "container slide mt-5" },
           _react2.default.createElement(
             "div",
             { className: "row" },
@@ -18600,7 +18600,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function CardBoard(props) {
   return _react2.default.createElement(
     "div",
-    { id: props.idLabel, className: "container-fluid mt-5 mb-5 card-board" },
+    { id: props.idLabel, className: "container mt-5 mb-5 card-board " },
     _react2.default.createElement(
       "div",
       { className: "row" },
@@ -18710,7 +18710,7 @@ var Footer = function (_Component) {
               { className: "col-sm-5 col-md-4" },
               _react2.default.createElement(
                 "button",
-                { id: "contact-me-button", type: "button", className: "btn btn-primary btn-lg mb-3", "data-toggle": "modal", "data-target": "#formspree", onClick: function onClick() {
+                { id: "contact-me-button", type: "button", className: "btn btn-danger btn-lg mb-3 p-3", "data-toggle": "modal", "data-target": "#formspree", onClick: function onClick() {
                     _this2.toggleButton();
                   } },
                 _react2.default.createElement("i", { className: this.state.openEnvelope ? 'fa fa-envelope-open fa-2x' : 'fa fa-envelope fa-2x' }),
@@ -18813,7 +18813,7 @@ var Footer = function (_Component) {
                   null,
                   _react2.default.createElement(
                     "a",
-                    { className: "nav-link", href: "/assets/media/resume25.pdf", target: "_blank" },
+                    { className: "nav-link", href: "/assets/media/resume-si.pdf", target: "_blank" },
                     _react2.default.createElement("i", { className: "fa fa-file-pdf-o fa-1x fa-fw" }),
                     "  ",
                     _react2.default.createElement(
@@ -18959,7 +18959,7 @@ var Projects = function (_Component) {
             { className: 'col-sm-4 offset-sm-4' },
             _react2.default.createElement(
               'button',
-              { id: 'toggle-projects-button', className: 'btn btn-danger btn-lg toggle-projects-btn mb-3 mt-3',
+              { id: 'toggle-projects-button', className: 'btn btn-danger btn-lg toggle-projects-btn mb-3 mt-3 p-3',
                 onClick: function onClick() {
                   _this2.toggleProjects();
                 } },

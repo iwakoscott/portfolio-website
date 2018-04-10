@@ -2,7 +2,7 @@ import React from 'react';
 
 function CardBoard(props) {
   return (
-    <div id={props.idLabel} className={"container-fluid mt-5 mb-5 card-board"}>
+    <div id={props.idLabel} className={"container mt-5 mb-5 card-board "}>
 
       <div className="row">
         <div id="badge" className="col-2 offset-5">

@@ -24,7 +24,7 @@ class Website extends Component {
         <Header
           name="Satoshi Iwako"
           quote=""
-          whoAmI="I am a Jr. Front-end Developer and Espresso Enthusiast."/>
+          whoAmI="I am a Front-end Developer."/>
 
         <CardBoard
           idLabel="my-past"
@@ -36,7 +36,7 @@ class Website extends Component {
                     I took a Full Stack Web Development Nanodegree on Udacity where I found
                     my passion for Web Development. I fell in love with Web Development so much
                     that I completed the program in just 2 months (on average, it takes 6 months to complete.)
-                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp and Udemy. Here are some of my projects: `}
+                    I wanted to keep learning so I have been learning what I can on FreeCodeCamp, Udemy, and Tyler Mcginnis' React + Redux courses. Here are some of my projects: `}
         />
 
         <Projects />
@@ -49,7 +49,7 @@ class Website extends Component {
           content={`I am learning all there is to Front-end Web Development and
                    working my way to find my first Developer position at a
                    prominent tech company. From there, I hope to delve into more
-                   Back-end Development and reach my ultimate goal : working as a
+                   Back-end Development and reach my ultimate goal : work as a
                    Full Stack Engineer.`}
         />
         <CardBoard
@@ -57,10 +57,9 @@ class Website extends Component {
           faClass="fa fa-wrench"
           title="What am I working on?"
           backgroundColor="#3498db"
-          content={`I am currently a Web Development Intern at the California Center for Cooperative Development
-                   where I am building a dynamic website for Jujube farmers. I am learning the WordPress CMS
-                   architecture, PHP, and the CSS Grid Layout. I am also working on building a Content Management Website
-                   for the Knights Landing One Health Clinic which is set to be deployed by the end of March 2018.`}
+          content={`I am currently working for a local startup in Davis called Foodnome as a Front-end Developer. The project I am working on right now is building
+            a modern, responsive static website for the startup to use to pitch to potential investors using Gatsby.js and React.
+            `}
         />
         <Footer />
       </div>

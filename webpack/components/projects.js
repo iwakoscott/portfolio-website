@@ -54,7 +54,7 @@ class Projects extends Component {
         </div>
         <div className="row text-center">
           <div className="col-sm-4 offset-sm-4">
-            <button id="toggle-projects-button" className="btn btn-danger btn-lg toggle-projects-btn mb-3 mt-3"
+            <button id="toggle-projects-button" className="btn btn-danger btn-lg toggle-projects-btn mb-3 mt-3 p-3"
                     onClick={() => {this.toggleProjects()}}>{this.state.showProjects ? "Hide Projects" : "Show Projects"}</button>
           </div>
         </div>

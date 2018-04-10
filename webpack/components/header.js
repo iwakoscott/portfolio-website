@@ -28,11 +28,11 @@ class Header extends Component {
               <i className="fa fa-id-badge fa-4x mb-2"></i>
             </div>
             <div className="col-sm-4 offset-sm-3">
-              <h5>{"Web Development Intern at the CCCD"}</h5>
+              <h5>{"Front-end Developer at Foodnome"}</h5>
             </div>
           </div>
         </div>
-        <div className="container slide">
+        <div className="container slide mt-5">
           <div className="row">
             <div className="col-sm-12 col-md-8 offset-md-2 sliding-card">
               <img id="profile-img" className="img-thumbnail mx-auto d-block"

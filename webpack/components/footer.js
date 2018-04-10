@@ -26,7 +26,7 @@ class Footer extends Component {
 
             {/* Button trigger modal*/}
 
-            <button id="contact-me-button" type="button" className="btn btn-primary btn-lg mb-3" data-toggle="modal" data-target="#formspree" onClick={() => {this.toggleButton()}}>
+            <button id="contact-me-button" type="button" className="btn btn-danger btn-lg mb-3 p-3" data-toggle="modal" data-target="#formspree" onClick={() => {this.toggleButton()}}>
             <i className={this.state.openEnvelope ? 'fa fa-envelope-open fa-2x' : 'fa fa-envelope fa-2x'}></i> {" Contact Me"}
             </button>
 
@@ -65,7 +65,7 @@ class Footer extends Component {
                 <a className="nav-link" href="https://www.linkedin.com/in/iwakoscott/" target="_blank"><i className="fa fa-linkedin-square fa-1x fa-fw"></i>  <span className="user-name">iwakoscott</span></a>
               </li>
               <li>
-                <a className="nav-link" href="/assets/media/resume25.pdf" target="_blank"><i className="fa fa-file-pdf-o fa-1x fa-fw"></i>  <span className="user-name">resume</span></a>
+                <a className="nav-link" href="/assets/media/resume-si.pdf" target="_blank"><i className="fa fa-file-pdf-o fa-1x fa-fw"></i>  <span className="user-name">resume</span></a>
               </li>
             </ul>
             </div>
