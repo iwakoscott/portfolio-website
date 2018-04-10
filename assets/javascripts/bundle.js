@@ -1183,7 +1183,7 @@ var Website = function (_Component) {
           faClass: 'fa fa-compass',
           backgroundColor: '#414d0b',
           title: 'Where am I going?',
-          content: 'I am learning all there is to Front-end Web Development and\n                   working my way to find my first Front-end Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Back-end Development and reach my ultimate goal : work as a\n                   Full Stack Engineer.'
+          content: 'I am learning all there is to Front-end Web Development and\n                   working my way to find my first Developer position at a\n                   prominent tech company. From there, I hope to delve into more\n                   Back-end Development and reach my ultimate goal : work as a\n                   Full Stack Engineer.'
         }),
         _react2.default.createElement(_cardBoard2.default, {
           idLabel: 'what-im-working-on',

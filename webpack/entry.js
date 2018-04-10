@@ -47,7 +47,7 @@ class Website extends Component {
           backgroundColor="#414d0b"
           title="Where am I going?"
           content={`I am learning all there is to Front-end Web Development and
-                   working my way to find my first Front-end Developer position at a
+                   working my way to find my first Developer position at a
                    prominent tech company. From there, I hope to delve into more
                    Back-end Development and reach my ultimate goal : work as a
                    Full Stack Engineer.`}
